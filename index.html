@@ -8,22 +8,17 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Mari Dinesh S | QA Engineer</title>
+    <meta name="description"
+          content="Mari Dinesh S - QA Engineer and Software Tester Portfolio">
 
-    <!-- ================= FAVICON ================= -->
+    <meta name="author"
+          content="Mari Dinesh S">
+
+    <title>Mari Dinesh S | QA Engineer</title>
 
     <link rel="icon"
           type="image/svg+xml"
           href="favicon.svg">
-
-
-    <!-- ================= FONT AWESOME ================= -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-    <!-- ================= GOOGLE FONT ================= -->
 
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
@@ -35,9 +30,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 
-
-    <!-- ================= CSS ================= -->
-
     <link rel="stylesheet"
           href="style.css">
 
@@ -47,20 +39,17 @@
 <body>
 
 
-<!-- =====================================================
-                         NAVBAR
-===================================================== -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
 
     <div class="nav-container">
 
-
         <a href="#home"
            class="logo">
 
             <span class="logo-box">
-                M
+                MD
             </span>
 
             <span>
@@ -73,15 +62,16 @@
         <nav class="nav-menu"
              id="navMenu">
 
-
             <a href="#home"
                class="nav-link active">
 
-                <i class="fa-solid fa-house"></i>
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 11.5 12 4l9 7.5"/>
+                    <path d="M5.5 10.5V20h13v-9.5"/>
+                    <path d="M9.5 20v-5h5v5"/>
+                </svg>
 
-                <span>
-                    Home
-                </span>
+                <span>Home</span>
 
             </a>
 
@@ -89,11 +79,12 @@
             <a href="#about"
                class="nav-link">
 
-                <i class="fa-solid fa-user"></i>
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="3.5"/>
+                    <path d="M5 20c.8-3.5 3.1-5.5 7-5.5s6.2 2 7 5.5"/>
+                </svg>
 
-                <span>
-                    About
-                </span>
+                <span>About</span>
 
             </a>
 
@@ -101,11 +92,13 @@
             <a href="#skills"
                class="nav-link">
 
-                <i class="fa-solid fa-code"></i>
+                <svg viewBox="0 0 24 24">
+                    <path d="m8 8-4 4 4 4"/>
+                    <path d="m16 8 4 4-4 4"/>
+                    <path d="m14 4-4 16"/>
+                </svg>
 
-                <span>
-                    Skills
-                </span>
+                <span>Skills</span>
 
             </a>
 
@@ -113,11 +106,14 @@
             <a href="#experience"
                class="nav-link">
 
-                <i class="fa-solid fa-briefcase"></i>
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="7" width="18" height="13" rx="2"/>
+                    <path d="M8 7V5h8v2"/>
+                    <path d="M3 12h18"/>
+                    <path d="M10 12v2h4v-2"/>
+                </svg>
 
-                <span>
-                    Experience
-                </span>
+                <span>Experience</span>
 
             </a>
 
@@ -125,11 +121,14 @@
             <a href="#projects"
                class="nav-link">
 
-                <i class="fa-solid fa-folder-open"></i>
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h7v6H4z"/>
+                    <path d="M13 6h7v6h-7z"/>
+                    <path d="M4 14h7v4H4z"/>
+                    <path d="M13 14h7v4h-7z"/>
+                </svg>
 
-                <span>
-                    Projects
-                </span>
+                <span>Projects</span>
 
             </a>
 
@@ -137,11 +136,12 @@
             <a href="#contact"
                class="nav-link">
 
-                <i class="fa-solid fa-envelope"></i>
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m4 7 8 6 8-6"/>
+                </svg>
 
-                <span>
-                    Contact
-                </span>
+                <span>Contact</span>
 
             </a>
 
@@ -150,10 +150,15 @@
                     class="theme-btn"
                     aria-label="Toggle theme">
 
-                <i class="fa-solid fa-moon"></i>
+                <svg id="moonIcon"
+                     viewBox="0 0 24 24">
+
+                    <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4
+                             A8.5 8.5 0 1 0 20 15.5Z"/>
+
+                </svg>
 
             </button>
-
 
         </nav>
 
@@ -162,10 +167,16 @@
                 id="mobileMenuBtn"
                 aria-label="Open menu">
 
-            <i class="fa-solid fa-bars"></i>
+            <svg id="menuIcon"
+                 viewBox="0 0 24 24">
+
+                <path d="M4 7h16"/>
+                <path d="M4 12h16"/>
+                <path d="M4 17h16"/>
+
+            </svg>
 
         </button>
-
 
     </div>
 
@@ -173,13 +184,10 @@
 
 
 
-<!-- =====================================================
-                         HERO
-===================================================== -->
+<!-- ================= HERO ================= -->
 
 <section id="home"
          class="hero">
-
 
     <div class="hero-container">
 
@@ -189,7 +197,7 @@
 
             <div class="availability">
 
-                <span></span>
+                <span class="status-dot"></span>
 
                 Available for Opportunities
 
@@ -197,29 +205,21 @@
 
 
             <p class="hero-small">
-
                 HELLO, I'M
-
             </p>
 
 
             <h1>
-
                 Mari
                 <span>Dinesh</span>
                 S
-
             </h1>
 
 
             <h2>
-
                 QA Engineer
-
                 <span>|</span>
-
                 Software Tester
-
             </h2>
 
 
@@ -240,7 +240,9 @@
                 <a href="#projects"
                    class="btn btn-primary">
 
-                    <i class="fa-solid fa-rocket"></i>
+                    <svg viewBox="0 0 24 24">
+                        <path d="m13 2-9 12h7l-1 8 9-12h-7z"/>
+                    </svg>
 
                     View My Work
 
@@ -251,12 +253,15 @@
                    class="btn btn-secondary"
                    download>
 
-                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 3v12"/>
+                        <path d="m7 10 5 5 5-5"/>
+                        <path d="M5 20h14"/>
+                    </svg>
 
                     Download Resume
 
                 </a>
-
 
             </div>
 
@@ -269,7 +274,34 @@
                    rel="noopener noreferrer"
                    aria-label="GitHub">
 
-                    <i class="fa-brands fa-github"></i>
+                    <svg viewBox="0 0 24 24"
+                         class="brand-icon">
+
+                        <path d="M12 2C6.48 2 2 6.58 2 12.25
+                                 c0 4.53 2.87 8.37 6.84 9.72
+                                 .5.1.68-.22.68-.48v-1.7
+                                 c-2.78.62-3.37-1.2-3.37-1.2
+                                 -.45-1.18-1.11-1.49-1.11-1.49
+                                 -.91-.64.07-.63.07-.63
+                                 1 .08 1.53 1.05 1.53 1.05
+                                 .9 1.58 2.36 1.12 2.94.86
+                                 .09-.67.35-1.12.64-1.38
+                                 -2.22-.26-4.56-1.14-4.56-5.07
+                                 0-1.12.39-2.03 1.03-2.75
+                                 -.1-.26-.45-1.3.1-2.7
+                                 0 0 .84-.28 2.75 1.05
+                                 .8-.23 1.65-.35 2.5-.35
+                                 .85 0 1.7.12 2.5.35
+                                 1.91-1.33 2.75-1.05 2.75-1.05
+                                 .55 1.4.2 2.44.1 2.7
+                                 .64.72 1.03 1.63 1.03 2.75
+                                 0 3.94-2.35 4.81-4.58 5.07
+                                 .36.32.68.94.68 1.9v2.82
+                                 c0 .27.18.59.69.48
+                                 A10.27 10.27 0 0 0 22 12.25
+                                 C22 6.58 17.52 2 12 2Z"/>
+
+                    </svg>
 
                 </a>
 
@@ -279,7 +311,21 @@
                    rel="noopener noreferrer"
                    aria-label="LinkedIn">
 
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <svg viewBox="0 0 24 24"
+                         class="brand-icon">
+
+                        <path d="M5 3.5A2.5 2.5 0 1 1 5 8
+                                 a2.5 2.5 0 0 1 0-4.5Z"/>
+
+                        <path d="M3 9h4v12H3z"/>
+
+                        <path d="M10 9h4v1.8
+                                 c.7-1.2 1.8-2.2 3.8-2.2
+                                 3.5 0 4.2 2.3 4.2 5.4V21h-4v-6.2
+                                 c0-1.5 0-3.4-2.1-3.4
+                                 -2.1 0-2.4 1.6-2.4 3.3V21h-4z"/>
+
+                    </svg>
 
                 </a>
 
@@ -287,164 +333,100 @@
                 <a href="mailto:maridinesh2202@gmail.com"
                    aria-label="Email">
 
-                    <i class="fa-solid fa-envelope"></i>
+                    <svg viewBox="0 0 24 24">
+
+                        <rect x="3" y="5"
+                              width="18"
+                              height="14"
+                              rx="2"/>
+
+                        <path d="m4 7 8 6 8-6"/>
+
+                    </svg>
 
                 </a>
 
-
             </div>
-
 
         </div>
 
 
 
-        <!-- CODE WINDOW -->
+        <!-- CODE CARD -->
 
         <div class="hero-card">
 
-
             <div class="code-window">
-
 
                 <div class="window-header">
 
-
                     <div class="window-dots">
-
                         <span></span>
                         <span></span>
                         <span></span>
-
                     </div>
 
-
-                    <p>
-                        qa_engineer.py
-                    </p>
-
+                    <p>qa_engineer.py</p>
 
                 </div>
-
 
 
                 <div class="code-content">
 
-
                     <p>
-
-                        <span class="purple">
-                            class
-                        </span>
-
-                        <span class="blue">
-                            QAEngineer
-                        </span>:
-
+                        <span class="purple">class</span>
+                        <span class="blue">QAEngineer</span>:
                     </p>
-
 
                     <p class="indent">
-
-                        <span class="purple">
-                            def
-                        </span>
-
-                        <span class="yellow">
-                            __init__
-                        </span>(self):
-
+                        <span class="purple">def</span>
+                        <span class="yellow">__init__</span>(self):
                     </p>
 
-
                     <p class="indent2">
-
                         self.name =
-
-                        <span class="green">
-                            "Mari Dinesh"
-                        </span>
-
+                        <span class="green">"Mari Dinesh"</span>
                     </p>
 
-
                     <p class="indent2">
-
                         self.role =
-
-                        <span class="green">
-                            "QA Engineer"
-                        </span>
-
+                        <span class="green">"QA Engineer"</span>
                     </p>
 
-
                     <p class="indent2">
-
                         self.experience =
-
-                        <span class="orange">
-                            "4+ Years"
-                        </span>
-
+                        <span class="orange">"4+ Years"</span>
                     </p>
 
-
                     <p class="indent2">
-
                         self.testing =
-
-                        <span class="green">
-                            True
-                        </span>
-
+                        <span class="green">True</span>
                     </p>
 
-
                     <p class="indent2">
-
                         self.automation =
-
-                        <span class="green">
-                            True
-                        </span>
-
+                        <span class="green">True</span>
                     </p>
-
 
                     <p class="indent2">
-
                         self.bug_free =
-
-                        <span class="green">
-                            "Goal"
-                        </span>
-
+                        <span class="green">"Goal"</span>
                     </p>
-
 
                     <br>
 
-
                     <p>
-
-                        <span class="purple">
-                            return
-                        </span>
-
+                        <span class="purple">return</span>
                         <span class="green">
                             "Quality First 🚀"
                         </span>
-
                     </p>
-
 
                 </div>
 
             </div>
 
         </div>
-
 
     </div>
 
@@ -452,119 +434,104 @@
 
 
 
-<!-- =====================================================
-                         STATS
-===================================================== -->
+<!-- ================= STATS ================= -->
 
 <section class="stats-section">
-
 
     <div class="stats-container">
 
 
         <div class="stat-box">
 
-
             <div class="stat-icon">
 
-                <i class="fa-solid fa-calendar-check"></i>
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4"
+                          width="18"
+                          height="17"
+                          rx="2"/>
+
+                    <path d="M8 2v4"/>
+                    <path d="M16 2v4"/>
+                    <path d="M3 9h18"/>
+                    <path d="m8 14 2 2 5-5"/>
+                </svg>
 
             </div>
-
 
             <div>
-
-                <strong>
-                    4+
-                </strong>
-
-                <span>
-                    Years Experience
-                </span>
-
+                <strong>4+</strong>
+                <span>Years Experience</span>
             </div>
-
 
         </div>
 
 
-
         <div class="stat-box">
-
 
             <div class="stat-icon">
 
-                <i class="fa-solid fa-layer-group"></i>
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3"
+                          width="7" height="7"
+                          rx="1"/>
+
+                    <rect x="14" y="3"
+                          width="7" height="7"
+                          rx="1"/>
+
+                    <rect x="3" y="14"
+                          width="7" height="7"
+                          rx="1"/>
+
+                    <rect x="14" y="14"
+                          width="7" height="7"
+                          rx="1"/>
+                </svg>
 
             </div>
-
 
             <div>
-
-                <strong>
-                    20+
-                </strong>
-
-                <span>
-                    Projects Tested
-                </span>
-
+                <strong>20+</strong>
+                <span>Projects Tested</span>
             </div>
-
 
         </div>
 
 
-
         <div class="stat-box">
-
 
             <div class="stat-icon">
 
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <svg viewBox="0 0 24 24">
+                    <path d="M14 3 3 14h7l-1 7 11-11h-7z"/>
+                </svg>
 
             </div>
-
 
             <div>
-
-                <strong>
-                    10+
-                </strong>
-
-                <span>
-                    Testing Tools
-                </span>
-
+                <strong>10+</strong>
+                <span>Testing Tools</span>
             </div>
-
 
         </div>
 
 
-
         <div class="stat-box">
-
 
             <div class="stat-icon">
 
-                <i class="fa-solid fa-bug"></i>
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3 14 8l5 2-5 2-2 5-2-5-5-2 5-2z"/>
+                    <path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>
+                </svg>
 
             </div>
-
 
             <div>
-
-                <strong>
-                    QA
-                </strong>
-
-                <span>
-                    Quality Focused
-                </span>
-
+                <strong>QA</strong>
+                <span>Quality Focused</span>
             </div>
-
 
         </div>
 
@@ -575,38 +542,28 @@
 
 
 
-<!-- =====================================================
-                         ABOUT
-===================================================== -->
+<!-- ================= ABOUT ================= -->
 
 <section id="about"
          class="section">
-
 
     <div class="container">
 
 
         <div class="section-title">
 
-
-            <span>
-                ABOUT ME
-            </span>
-
+            <span>ABOUT ME</span>
 
             <h2>
                 Turning Bugs Into Better Software
             </h2>
-
 
             <p>
                 A quality-focused QA Engineer passionate
                 about reliable and user-friendly software.
             </p>
 
-
         </div>
-
 
 
         <div class="about-grid">
@@ -614,52 +571,46 @@
 
             <div class="about-text">
 
-
                 <p>
-
                     I am a passionate QA Engineer and
                     Software Tester with 4+ years of
                     experience in software testing and
                     quality assurance.
-
                 </p>
 
-
                 <p>
-
                     I have hands-on experience in Manual
                     Testing, Functional Testing, Regression
                     Testing, Integration Testing, API Testing,
                     UI Testing and Cross-Browser Testing.
-
                 </p>
 
-
                 <p>
-
                     I also work with Python, Selenium,
                     Behave, Robot Framework, Postman,
                     SQL, JMeter, Jira and BrowserStack
                     to improve testing efficiency and
                     product quality.
-
                 </p>
 
 
-                <p class="highlight-text">
+                <div class="highlight-text">
 
-                    <i class="fa-solid fa-circle-check"></i>
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="m8 12 2.5 2.5L16 9"/>
+                    </svg>
 
-                    Understand the requirement.
-                    Find the risk.
-                    Test deeply.
-                    Deliver quality.
+                    <span>
+                        Understand the requirement.
+                        Find the risk.
+                        Test deeply.
+                        Deliver quality.
+                    </span>
 
-                </p>
-
+                </div>
 
             </div>
-
 
 
             <div class="about-cards">
@@ -667,19 +618,17 @@
 
                 <div class="info-card">
 
-
                     <div class="info-icon">
 
-                        <i class="fa-solid fa-bug"></i>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4 14 9l5 2-5 2-2 5-2-5-5-2 5-2z"/>
+                        </svg>
 
                     </div>
 
-
                     <div>
 
-                        <h3>
-                            Manual Testing
-                        </h3>
+                        <h3>Manual Testing</h3>
 
                         <p>
                             Functional, Regression,
@@ -688,26 +637,30 @@
 
                     </div>
 
-
                 </div>
-
 
 
                 <div class="info-card">
 
-
                     <div class="info-icon">
 
-                        <i class="fa-solid fa-robot"></i>
+                        <svg viewBox="0 0 24 24">
+                            <rect x="5" y="7"
+                                  width="14"
+                                  height="11"
+                                  rx="2"/>
+
+                            <path d="M8 7V5h8v2"/>
+                            <circle cx="9" cy="12" r="1"/>
+                            <circle cx="15" cy="12" r="1"/>
+                            <path d="M9 15h6"/>
+                        </svg>
 
                     </div>
 
-
                     <div>
 
-                        <h3>
-                            Automation
-                        </h3>
+                        <h3>Automation</h3>
 
                         <p>
                             Python, Selenium, Behave &
@@ -716,26 +669,25 @@
 
                     </div>
 
-
                 </div>
-
 
 
                 <div class="info-card">
 
-
                     <div class="info-icon">
 
-                        <i class="fa-solid fa-plug"></i>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 12h8"/>
+                            <path d="M7 8h-2a3 3 0 0 0 0 6h2"/>
+                            <path d="M17 8h2a3 3 0 0 1 0 6h-2"/>
+                            <path d="M9 12h6"/>
+                        </svg>
 
                     </div>
 
-
                     <div>
 
-                        <h3>
-                            API Testing
-                        </h3>
+                        <h3>API Testing</h3>
 
                         <p>
                             Postman, REST API, JSON &
@@ -744,12 +696,10 @@
 
                     </div>
 
-
                 </div>
 
 
             </div>
-
 
         </div>
 
@@ -759,38 +709,26 @@
 
 
 
-<!-- =====================================================
-                         SKILLS
-===================================================== -->
+<!-- ================= SKILLS ================= -->
 
 <section id="skills"
          class="section section-alt">
-
 
     <div class="container">
 
 
         <div class="section-title">
 
+            <span>MY SKILLS</span>
 
-            <span>
-                MY SKILLS
-            </span>
-
-
-            <h2>
-                Tools & Technologies
-            </h2>
-
+            <h2>Tools & Technologies</h2>
 
             <p>
                 Technologies and tools I use throughout
                 the testing lifecycle.
             </p>
 
-
         </div>
-
 
 
         <div class="skills-grid">
@@ -798,173 +736,108 @@
 
             <div class="skill-card">
 
-
                 <div class="skill-icon">
-
-                    <i class="fa-solid fa-list-check"></i>
-
+                    ✓
                 </div>
 
-
-                <h3>
-                    Manual Testing
-                </h3>
-
+                <h3>Manual Testing</h3>
 
                 <div class="skill-tags">
-
                     <span>Functional</span>
                     <span>Regression</span>
                     <span>Integration</span>
                     <span>System</span>
                     <span>UI Testing</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="skill-card">
 
-
                 <div class="skill-icon">
-
-                    <i class="fa-solid fa-robot"></i>
-
+                    &lt;/&gt;
                 </div>
 
-
-                <h3>
-                    Automation
-                </h3>
-
+                <h3>Automation</h3>
 
                 <div class="skill-tags">
-
                     <span>Python</span>
                     <span>Selenium</span>
                     <span>Behave</span>
                     <span>Robot Framework</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="skill-card">
 
-
                 <div class="skill-icon">
-
-                    <i class="fa-solid fa-plug"></i>
-
+                    ↔
                 </div>
 
-
-                <h3>
-                    API Testing
-                </h3>
-
+                <h3>API Testing</h3>
 
                 <div class="skill-tags">
-
                     <span>Postman</span>
                     <span>REST API</span>
                     <span>JSON</span>
                     <span>Validation</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="skill-card">
 
-
                 <div class="skill-icon">
-
-                    <i class="fa-solid fa-database"></i>
-
+                    DB
                 </div>
 
-
-                <h3>
-                    Database
-                </h3>
-
+                <h3>Database</h3>
 
                 <div class="skill-tags">
-
                     <span>SQL</span>
                     <span>SQL Server</span>
                     <span>Data Validation</span>
                     <span>Stored Procedures</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="skill-card">
 
-
                 <div class="skill-icon">
-
-                    <i class="fa-solid fa-gauge-high"></i>
-
+                    ↗
                 </div>
 
-
-                <h3>
-                    Performance
-                </h3>
-
+                <h3>Performance</h3>
 
                 <div class="skill-tags">
-
                     <span>JMeter</span>
                     <span>Load Testing</span>
                     <span>Performance Testing</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="skill-card">
 
-
                 <div class="skill-icon">
-
-                    <i class="fa-solid fa-toolbox"></i>
-
+                    ⚙
                 </div>
 
-
-                <h3>
-                    Testing Tools
-                </h3>
-
+                <h3>Testing Tools</h3>
 
                 <div class="skill-tags">
-
                     <span>Jira</span>
                     <span>GitHub</span>
                     <span>BrowserStack</span>
                     <span>Excel</span>
-
                 </div>
-
 
             </div>
 
@@ -977,38 +850,26 @@
 
 
 
-<!-- =====================================================
-                       EXPERIENCE
-===================================================== -->
+<!-- ================= EXPERIENCE ================= -->
 
 <section id="experience"
          class="section">
-
 
     <div class="container">
 
 
         <div class="section-title">
 
+            <span>CAREER</span>
 
-            <span>
-                CAREER
-            </span>
-
-
-            <h2>
-                Professional Experience
-            </h2>
-
+            <h2>Professional Experience</h2>
 
             <p>
                 My experience across software testing
                 and quality assurance.
             </p>
 
-
         </div>
-
 
 
         <div class="timeline">
@@ -1016,179 +877,120 @@
 
             <div class="timeline-item">
 
-
                 <div class="timeline-dot">
-
-                    <i class="fa-solid fa-briefcase"></i>
-
+                    01
                 </div>
 
-
                 <div class="timeline-card">
-
 
                     <span class="timeline-date">
                         2024 — Present
                     </span>
 
-
                     <h3>
                         QA Engineer / Software Tester
                     </h3>
 
-
                     <h4>
-
-                        <i class="fa-solid fa-building"></i>
-
                         Software Testing & QA
-
                     </h4>
 
-
                     <p>
-
                         Responsible for manual and
                         automation testing across web,
                         mobile and API-based applications.
                         Worked on functional, regression,
                         integration and API testing
                         throughout the development lifecycle.
-
                     </p>
 
-
                     <div class="tags">
-
                         <span>Manual Testing</span>
                         <span>API Testing</span>
                         <span>Python</span>
                         <span>Selenium</span>
                         <span>Jira</span>
-
                     </div>
 
-
                 </div>
-
 
             </div>
 
 
-
             <div class="timeline-item">
 
-
                 <div class="timeline-dot">
-
-                    <i class="fa-solid fa-code"></i>
-
+                    02
                 </div>
 
-
                 <div class="timeline-card">
-
 
                     <span class="timeline-date">
                         2022 — 2024
                     </span>
 
-
                     <h3>
                         Testing Engineer
                     </h3>
 
-
                     <h4>
-
-                        <i class="fa-solid fa-building"></i>
-
                         Software Testing
-
                     </h4>
 
-
                     <p>
-
                         Performed functional, regression,
                         integration and system testing.
                         Worked closely with developers,
                         business teams and project
                         stakeholders throughout the SDLC.
-
                     </p>
 
-
                     <div class="tags">
-
                         <span>Functional Testing</span>
                         <span>Regression</span>
                         <span>SQL</span>
                         <span>Postman</span>
-
                     </div>
 
-
                 </div>
-
 
             </div>
 
 
-
             <div class="timeline-item">
 
-
                 <div class="timeline-dot">
-
-                    <i class="fa-solid fa-vial"></i>
-
+                    03
                 </div>
 
-
                 <div class="timeline-card">
-
 
                     <span class="timeline-date">
                         2022
                     </span>
 
-
                     <h3>
                         Software Tester
                     </h3>
 
-
                     <h4>
-
-                        <i class="fa-solid fa-building"></i>
-
                         QA & Software Testing
-
                     </h4>
 
-
                     <p>
-
                         Executed test cases, identified
                         defects, performed retesting and
                         supported regression testing
                         activities.
-
                     </p>
 
-
                     <div class="tags">
-
                         <span>Manual Testing</span>
                         <span>Test Cases</span>
                         <span>Bug Tracking</span>
-
                     </div>
 
-
                 </div>
-
 
             </div>
 
@@ -1201,38 +1003,26 @@
 
 
 
-<!-- =====================================================
-                         PROJECTS
-===================================================== -->
+<!-- ================= PROJECTS ================= -->
 
 <section id="projects"
          class="section section-alt">
-
 
     <div class="container">
 
 
         <div class="section-title">
 
+            <span>MY WORK</span>
 
-            <span>
-                MY WORK
-            </span>
-
-
-            <h2>
-                Featured Projects
-            </h2>
-
+            <h2>Featured Projects</h2>
 
             <p>
                 Applications and products I have
                 tested or worked on.
             </p>
 
-
         </div>
-
 
 
         <div class="projects-grid">
@@ -1240,293 +1030,204 @@
 
             <div class="project-card">
 
-
                 <div class="project-top">
 
-
                     <div class="project-icon">
-
-                        <i class="fa-solid fa-building"></i>
-
+                        EM
                     </div>
-
 
                     <span>
                         WEB APPLICATION
                     </span>
 
-
                 </div>
-
 
                 <h3>
                     eMarQuer & EWMS
                 </h3>
 
-
                 <p>
-
                     Enterprise applications involving
                     project management, meetings,
                     task management, LMS, HMS, TMS
                     and business workflows.
-
                 </p>
 
-
                 <div class="tags">
-
                     <span>Manual</span>
                     <span>API</span>
                     <span>SQL</span>
                     <span>Regression</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="project-card">
-
 
                 <div class="project-top">
 
-
                     <div class="project-icon">
-
-                        <i class="fa-solid fa-truck"></i>
-
+                        TR
                     </div>
-
 
                     <span>
                         MOBILE / SAAS
                     </span>
 
-
                 </div>
-
 
                 <h3>
                     Truckrr Applications
                 </h3>
 
-
                 <p>
-
                     Tested TruckrrOne, Truckrr Driver
                     and Truckrr Corporate mobile and
                     SaaS applications.
-
                 </p>
 
-
                 <div class="tags">
-
                     <span>Mobile</span>
                     <span>UI</span>
                     <span>API</span>
                     <span>Regression</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="project-card">
-
 
                 <div class="project-top">
 
-
                     <div class="project-icon">
-
-                        <i class="fa-solid fa-link"></i>
-
+                        BC
                     </div>
-
 
                     <span>
                         BLOCKCHAIN
                     </span>
 
-
                 </div>
-
 
                 <h3>
                     Blockchain & NFT Applications
                 </h3>
 
-
                 <p>
-
                     Tested blockchain applications,
                     NFT platforms, e-commerce
                     applications and game applications.
-
                 </p>
 
-
                 <div class="tags">
-
                     <span>Functional</span>
                     <span>Web</span>
                     <span>Regression</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="project-card featured-project">
-
 
                 <div class="project-top">
 
-
                     <div class="project-icon">
-
-                        <i class="fa-solid fa-face-smile"></i>
-
+                        AI
                     </div>
-
 
                     <span>
                         PYTHON / API
                     </span>
 
-
                 </div>
-
 
                 <h3>
                     Face Verification API
                 </h3>
 
-
                 <p>
-
                     Developed and tested a Face
                     Verification API using Python,
                     FastAPI and InsightFace for
                     image-based face matching.
-
                 </p>
 
-
                 <div class="tags">
-
                     <span>Python</span>
                     <span>FastAPI</span>
                     <span>API</span>
                     <span>InsightFace</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="project-card">
-
 
                 <div class="project-top">
 
-
                     <div class="project-icon">
-
-                        <i class="fa-solid fa-graduation-cap"></i>
-
+                        LMS
                     </div>
-
 
                     <span>
                         EDUCATION
                     </span>
 
-
                 </div>
-
 
                 <h3>
                     ExamCentre & LMS
                 </h3>
 
-
                 <p>
-
                     Tested examination, learning
                     management and evaluation
                     workflows across education
                     applications.
-
                 </p>
 
-
                 <div class="tags">
-
                     <span>Functional</span>
                     <span>Integration</span>
                     <span>Regression</span>
-
                 </div>
-
 
             </div>
 
 
-
             <div class="project-card">
-
 
                 <div class="project-top">
 
-
                     <div class="project-icon">
-
-                        <i class="fa-solid fa-chart-line"></i>
-
+                        BP
                     </div>
-
 
                     <span>
                         BUSINESS APPLICATION
                     </span>
 
-
                 </div>
-
 
                 <h3>
                     Appraisal & Business Systems
                 </h3>
 
-
                 <p>
-
                     Worked on rating, appraisal,
                     task management and enterprise
                     business workflow applications.
-
                 </p>
 
-
                 <div class="tags">
-
                     <span>System</span>
                     <span>UI</span>
                     <span>API</span>
-
                 </div>
-
 
             </div>
 
@@ -1539,37 +1240,27 @@
 
 
 
-<!-- =====================================================
-                     TESTING PROCESS
-===================================================== -->
+<!-- ================= TESTING PROCESS ================= -->
 
 <section class="section">
-
 
     <div class="container">
 
 
         <div class="section-title">
 
-
-            <span>
-                MY APPROACH
-            </span>
-
+            <span>MY APPROACH</span>
 
             <h2>
                 Software Testing Process
             </h2>
-
 
             <p>
                 A structured approach to delivering
                 stable and reliable software.
             </p>
 
-
         </div>
-
 
 
         <div class="process-grid">
@@ -1579,7 +1270,7 @@
 
                 <span>01</span>
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="process-icon">⌕</div>
 
                 <h3>
                     Requirement Analysis
@@ -1593,12 +1284,11 @@
             </div>
 
 
-
             <div class="process-card">
 
                 <span>02</span>
 
-                <i class="fa-solid fa-file-pen"></i>
+                <div class="process-icon">✎</div>
 
                 <h3>
                     Test Planning
@@ -1612,12 +1302,11 @@
             </div>
 
 
-
             <div class="process-card">
 
                 <span>03</span>
 
-                <i class="fa-solid fa-vial-circle-check"></i>
+                <div class="process-icon">✓</div>
 
                 <h3>
                     Test Execution
@@ -1631,12 +1320,11 @@
             </div>
 
 
-
             <div class="process-card">
 
                 <span>04</span>
 
-                <i class="fa-solid fa-bug"></i>
+                <div class="process-icon">🐞</div>
 
                 <h3>
                     Defect Tracking
@@ -1650,12 +1338,11 @@
             </div>
 
 
-
             <div class="process-card">
 
                 <span>05</span>
 
-                <i class="fa-solid fa-rotate"></i>
+                <div class="process-icon">↻</div>
 
                 <h3>
                     Regression
@@ -1669,12 +1356,11 @@
             </div>
 
 
-
             <div class="process-card">
 
                 <span>06</span>
 
-                <i class="fa-solid fa-circle-check"></i>
+                <div class="process-icon">✓</div>
 
                 <h3>
                     Release Validation
@@ -1696,13 +1382,10 @@
 
 
 
-<!-- =====================================================
-                         CONTACT
-===================================================== -->
+<!-- ================= CONTACT ================= -->
 
 <section id="contact"
          class="contact-section">
-
 
     <div class="container">
 
@@ -1712,23 +1395,18 @@
 
             <div class="contact-content">
 
-
                 <span>
                     GET IN TOUCH
                 </span>
-
 
                 <h2>
                     Let's Build Better Software Together.
                 </h2>
 
-
                 <p>
-
                     Looking for a QA Engineer for
                     your next project?
                     Feel free to connect with me.
-
                 </p>
 
 
@@ -1738,7 +1416,14 @@
                     <a href="mailto:maridinesh2202@gmail.com"
                        class="btn btn-primary">
 
-                        <i class="fa-solid fa-envelope"></i>
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="5"
+                                  width="18"
+                                  height="14"
+                                  rx="2"/>
+
+                            <path d="m4 7 8 6 8-6"/>
+                        </svg>
 
                         Email Me
 
@@ -1750,7 +1435,18 @@
                        rel="noopener noreferrer"
                        class="btn btn-secondary">
 
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 3.5A2.5 2.5 0 1 1 5 8
+                                     a2.5 2.5 0 0 1 0-4.5Z"/>
+
+                            <path d="M3 9h4v12H3z"/>
+
+                            <path d="M10 9h4v1.8
+                                     c.7-1.2 1.8-2.2 3.8-2.2
+                                     3.5 0 4.2 2.3 4.2 5.4V21h-4v-6.2
+                                     c0-1.5 0-3.4-2.1-3.4
+                                     -2.1 0-2.4 1.6-2.4 3.3V21h-4z"/>
+                        </svg>
 
                         LinkedIn
 
@@ -1759,9 +1455,7 @@
 
                 </div>
 
-
             </div>
-
 
 
             <div class="contact-info">
@@ -1769,7 +1463,13 @@
 
                 <div>
 
-                    <i class="fa-solid fa-envelope"></i>
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="5"
+                              width="18"
+                              height="14"
+                              rx="2"/>
+                        <path d="m4 7 8 6 8-6"/>
+                    </svg>
 
                     <p>
                         maridinesh2202@gmail.com
@@ -1780,7 +1480,13 @@
 
                 <div>
 
-                    <i class="fa-solid fa-phone"></i>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7 3h3l2 5-2 2
+                                 c1 2 2 3 4 4l2-2 5 2v3
+                                 c0 1-1 2-2 2
+                                 C11 19 5 13 5 5
+                                 c0-1 1-2 2-2Z"/>
+                    </svg>
 
                     <p>
                         +91 63803 45906
@@ -1791,7 +1497,11 @@
 
                 <div>
 
-                    <i class="fa-solid fa-location-dot"></i>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 21s7-6.2 7-11
+                                 a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/>
+                        <circle cx="12" cy="10" r="2.5"/>
+                    </svg>
 
                     <p>
                         Chennai, Tamil Nadu, India
@@ -1811,12 +1521,9 @@
 
 
 
-<!-- =====================================================
-                         FOOTER
-===================================================== -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
-
 
     <div class="footer-container">
 
@@ -1841,7 +1548,34 @@
                target="_blank"
                rel="noopener noreferrer">
 
-                <i class="fa-brands fa-github"></i>
+                <svg viewBox="0 0 24 24"
+                     class="brand-icon">
+
+                    <path d="M12 2C6.48 2 2 6.58 2 12.25
+                             c0 4.53 2.87 8.37 6.84 9.72
+                             .5.1.68-.22.68-.48v-1.7
+                             c-2.78.62-3.37-1.2-3.37-1.2
+                             -.45-1.18-1.11-1.49-1.11-1.49
+                             -.91-.64.07-.63.07-.63
+                             1 .08 1.53 1.05 1.53 1.05
+                             .9 1.58 2.36 1.12 2.94.86
+                             .09-.67.35-1.12.64-1.38
+                             -2.22-.26-4.56-1.14-4.56-5.07
+                             0-1.12.39-2.03 1.03-2.75
+                             -.1-.26-.45-1.3.1-2.7
+                             0 0 .84-.28 2.75 1.05
+                             .8-.23 1.65-.35 2.5-.35
+                             .85 0 1.7.12 2.5.35
+                             1.91-1.33 2.75-1.05 2.75-1.05
+                             .55 1.4.2 2.44.1 2.7
+                             .64.72 1.03 1.63 1.03 2.75
+                             0 3.94-2.35 4.81-4.58 5.07
+                             .36.32.68.94.68 1.9v2.82
+                             c0 .27.18.59.69.48
+                             A10.27 10.27 0 0 0 22 12.25
+                             C22 6.58 17.52 2 12 2Z"/>
+
+                </svg>
 
             </a>
 
@@ -1850,62 +1584,69 @@
                target="_blank"
                rel="noopener noreferrer">
 
-                <i class="fa-brands fa-linkedin-in"></i>
+                <svg viewBox="0 0 24 24"
+                     class="brand-icon">
+
+                    <path d="M5 3.5A2.5 2.5 0 1 1 5 8
+                             a2.5 2.5 0 0 1 0-4.5Z"/>
+
+                    <path d="M3 9h4v12H3z"/>
+
+                    <path d="M10 9h4v1.8
+                             c.7-1.2 1.8-2.2 3.8-2.2
+                             3.5 0 4.2 2.3 4.2 5.4V21h-4v-6.2
+                             c0-1.5 0-3.4-2.1-3.4
+                             -2.1 0-2.4 1.6-2.4 3.3V21h-4z"/>
+
+                </svg>
 
             </a>
 
 
             <a href="mailto:maridinesh2202@gmail.com">
 
-                <i class="fa-solid fa-envelope"></i>
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5"
+                          width="18"
+                          height="14"
+                          rx="2"/>
+
+                    <path d="m4 7 8 6 8-6"/>
+                </svg>
 
             </a>
 
 
         </div>
 
-
     </div>
-
 
 
     <div class="copyright">
 
-        ©
-
-        <span id="currentYear"></span>
-
+        © <span id="currentYear"></span>
         Mari Dinesh S.
-
         All Rights Reserved.
 
     </div>
-
 
 </footer>
 
 
 
-<!-- =====================================================
-                       SCROLL TOP
-===================================================== -->
+<!-- ================= SCROLL TOP ================= -->
 
 <button id="scrollTop"
         class="scroll-top"
         aria-label="Scroll to top">
 
-    <i class="fa-solid fa-arrow-up"></i>
+    ↑
 
 </button>
 
 
 
-<!-- =====================================================
-                       JAVASCRIPT
-===================================================== -->
-
 <script src="script.js"></script>
-
 
 </body>
 
