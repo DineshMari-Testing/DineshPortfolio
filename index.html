@@ -1,133 +1,105 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mari Dinesh S | QA Engineer</title>
 
-    <!-- Fonts -->
+    <!-- MD Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+<!-- ================= NAVBAR ================= -->
 
-<header class="header">
+<header class="navbar">
 
-    <nav class="navbar">
+    <div class="nav-container">
 
         <a href="#home" class="logo">
-            MARI <span>DINESH.</span>
+            <span class="logo-box">M</span>
+            <span>MARI DINESH.S</span>
         </a>
 
+        <nav class="nav-menu" id="navMenu">
 
-        <!-- Desktop Navigation -->
+            <a href="#home" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
 
-        <ul class="nav-links">
+            <a href="#about" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                <span>About</span>
+            </a>
 
-            <li>
-                <a href="#home" class="nav-link active">Home</a>
-            </li>
+            <a href="#skills" class="nav-link">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
 
-            <li>
-                <a href="#about" class="nav-link">About</a>
-            </li>
+            <a href="#experience" class="nav-link">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Experience</span>
+            </a>
 
-            <li>
-                <a href="#skills" class="nav-link">Skills</a>
-            </li>
+            <a href="#projects" class="nav-link">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Projects</span>
+            </a>
 
-            <li>
-                <a href="#experience" class="nav-link">Experience</a>
-            </li>
+            <a href="#contact" class="nav-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
 
-            <li>
-                <a href="#projects" class="nav-link">Projects</a>
-            </li>
+            <button id="themeToggle"
+                    class="theme-btn"
+                    aria-label="Toggle theme">
 
-            <li>
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
+                <i class="fa-solid fa-moon"></i>
 
-        </ul>
+            </button>
 
+        </nav>
 
-        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open menu">
 
-        <button class="menu-button" id="menuButton" aria-label="Open menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
+            <i class="fa-solid fa-bars"></i>
 
         </button>
 
-    </nav>
+    </div>
 
 </header>
 
 
-
-<!-- =====================================================
-     MOBILE SIDE MENU
-===================================================== -->
-
-<div class="mobile-menu" id="mobileMenu">
-
-    <button class="close-menu" id="closeMenu">
-        ×
-    </button>
-
-    <div class="mobile-menu-title">
-        MARI <span>DINESH.</span>
-    </div>
-
-    <a href="#home">Home</a>
-
-    <a href="#about">About</a>
-
-    <a href="#skills">Skills</a>
-
-    <a href="#experience">Experience</a>
-
-    <a href="#projects">Projects</a>
-
-    <a href="#contact">Contact</a>
-
-</div>
-
-<div class="menu-overlay" id="menuOverlay"></div>
-
-
-
-<!-- =====================================================
-     HOME
-===================================================== -->
+<!-- ================= HERO ================= -->
 
 <section id="home" class="hero">
 
     <div class="hero-container">
-
-
-        <!-- LEFT -->
 
         <div class="hero-content">
 
@@ -135,123 +107,114 @@
 
                 <span></span>
 
-                Open to QA Opportunities
+                Available for Opportunities
 
             </div>
 
-
-            <p class="hero-small-title">
+            <p class="hero-small">
                 HELLO, I'M
             </p>
 
-
             <h1>
-                Mari Dinesh <span>S.</span>
+                Mari <span>Dinesh</span> S
             </h1>
 
-
             <h2>
-                QA Engineer
-                <b>|</b>
-                Software Tester
+                QA Engineer <span>|</span> Software Tester
             </h2>
-
 
             <p class="hero-description">
 
-                QA Engineer with 4+ years of experience in software
-                testing, specializing in Manual Testing, Functional
-                Testing, Regression Testing, API Testing and UI Testing.
-
-                I focus on identifying defects early, validating
-                application quality and delivering reliable software.
+                4+ years of experience in Manual Testing,
+                Automation Testing, API Testing and Software
+                Quality Assurance. I focus on finding defects
+                early, validating business requirements and
+                delivering reliable software products.
 
             </p>
 
-
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn primary-btn">
+                <a href="#projects"
+                   class="btn btn-primary">
+
+                    <i class="fa-solid fa-rocket"></i>
+
                     View My Work
-                    <span>→</span>
+
                 </a>
 
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
+                <a href="resume.pdf"
+                   class="btn btn-secondary"
+                   download>
+
+                    <i class="fa-solid fa-file-arrow-down"></i>
+
+                    Download Resume
+
                 </a>
 
             </div>
 
 
-            <!-- STATS -->
+            <div class="social-links">
 
-            <div class="hero-stats">
+                <a href="https://github.com/DineshMari-Testing"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
 
-                <div class="stat">
+                    <i class="fa-brands fa-github"></i>
 
-                    <strong>4+</strong>
-
-                    <span>
-                        Years<br>
-                        Experience
-                    </span>
-
-                </div>
+                </a>
 
 
-                <div class="stat">
+                <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
 
-                    <strong>15+</strong>
+                    <i class="fa-brands fa-linkedin-in"></i>
 
-                    <span>
-                        QA<br>
-                        Skills
-                    </span>
-
-                </div>
+                </a>
 
 
-                <div class="stat">
+                <a href="mailto:maridinesh2202@gmail.com"
+                   aria-label="Email">
 
-                    <strong>10+</strong>
+                    <i class="fa-solid fa-envelope"></i>
 
-                    <span>
-                        Projects &<br>
-                        Applications
-                    </span>
-
-                </div>
+                </a>
 
             </div>
 
         </div>
 
 
+        <!-- CODE CARD -->
 
-        <!-- RIGHT QA CARD -->
+        <div class="hero-card">
 
-        <div class="hero-visual">
+            <div class="code-window">
 
-            <div class="qa-dashboard">
+                <div class="window-header">
 
-                <div class="dashboard-header">
+                    <div class="window-dots">
 
-                    <div class="dashboard-dots">
                         <span></span>
                         <span></span>
                         <span></span>
+
                     </div>
 
-                    <span>
-                        qa_engineer.py
-                    </span>
+                    <p>qa_engineer.py</p>
 
                 </div>
 
 
-                <div class="dashboard-body">
+                <div class="code-content">
 
-                    <div class="code-line">
+                    <p>
 
                         <span class="purple">class</span>
 
@@ -259,797 +222,536 @@
                             QAEngineer
                         </span>:
 
-                    </div>
+                    </p>
 
 
-                    <div class="code-line indent">
+                    <p class="indent">
 
                         <span class="purple">
                             def
                         </span>
 
+                        <span class="yellow">
+                            __init__
+                        </span>(self):
+
+                    </p>
+
+
+                    <p class="indent2">
+
+                        self.name =
+
                         <span class="green">
-                            test_application
-                        </span>():
-
-                    </div>
-
-
-                    <div class="code-line indent2">
-
-                        requirements =
-                        <span class="orange">
-                            "validated"
+                            "Mari Dinesh"
                         </span>
 
-                    </div>
+                    </p>
 
 
-                    <div class="code-line indent2">
+                    <p class="indent2">
 
-                        test_cases =
-                        <span class="orange">
-                            "executed"
+                        self.role =
+
+                        <span class="green">
+                            "QA Engineer"
                         </span>
 
-                    </div>
+                    </p>
 
 
-                    <div class="code-line indent2">
+                    <p class="indent2">
 
-                        bugs =
+                        self.experience =
+
                         <span class="orange">
-                            "identified"
+                            "4+ Years"
                         </span>
 
-                    </div>
+                    </p>
 
 
-                    <div class="code-line indent2">
+                    <p class="indent2">
 
-                        regression =
-                        <span class="orange">
-                            "verified"
+                        self.testing =
+
+                        <span class="green">
+                            True
                         </span>
 
-                    </div>
+                    </p>
 
 
-                    <div class="code-line indent2">
+                    <p class="indent2">
 
-                        quality =
-                        <span class="orange">
-                            "improved"
+                        self.automation =
+
+                        <span class="green">
+                            True
                         </span>
 
-                    </div>
+                    </p>
 
 
-                    <div class="code-line indent2">
+                    <p class="indent2">
+
+                        self.bug_free =
+
+                        <span class="green">
+                            "Goal"
+                        </span>
+
+                    </p>
+
+
+                    <br>
+
+
+                    <p>
 
                         <span class="purple">
                             return
                         </span>
 
-                        quality
-
-                    </div>
-
-                </div>
-
-
-                <div class="dashboard-status">
-
-                    <span class="passed-dot"></span>
-
-                    All systems tested successfully
-
-                </div>
-
-            </div>
-
-
-            <div class="floating-card floating-one">
-                ✓ Test Passed
-            </div>
-
-            <div class="floating-card floating-two">
-                API Testing
-            </div>
-
-            <div class="floating-card floating-three">
-                🐞 Bug Found
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-
-<section id="about" class="section about-section">
-
-    <div class="section-title">
-
-        <div class="section-number">
-            01
-        </div>
-
-        <div>
-
-            <p>GET TO KNOW ME</p>
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-    <div class="about-grid">
-
-
-        <div class="about-text">
-
-            <h3>
-                Turning requirements into
-                <span>quality software.</span>
-            </h3>
-
-
-            <p>
-                I am a QA Engineer and Software Tester with 4+ years
-                of hands-on experience in web applications,
-                enterprise applications and mobile application testing.
-            </p>
-
-
-            <p>
-                My testing experience includes functional testing,
-                regression testing, integration testing, system testing,
-                API testing, UI testing, database validation and
-                defect management.
-            </p>
-
-
-            <p>
-                I enjoy understanding application workflows,
-                identifying edge cases and finding defects before
-                they reach end users.
-            </p>
-
-
-            <p>
-                Alongside Manual Testing, I am continuously improving
-                my automation skills using Python, Selenium and
-                Robot Framework.
-            </p>
-
-
-            <div class="about-details">
-
-                <div>
-
-                    <span>Name</span>
-
-                    <strong>
-                        Mari Dinesh S
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>Role</span>
-
-                    <strong>
-                        QA Engineer
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>Specialization</span>
-
-                    <strong>
-                        Manual & Automation Testing
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>Location</span>
-
-                    <strong>
-                        Chennai, India
-                    </strong>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="quality-card">
-
-            <div class="quality-icon">
-                QA
-            </div>
-
-            <h3>
-                Quality First
-            </h3>
-
-            <p>
-                Test • Analyze • Improve
-            </p>
-
-            <div class="quality-line"></div>
-
-            <span>
-                Building confidence in every software release
-                through effective testing.
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SKILLS
-===================================================== -->
-
-<section id="skills" class="section skills-section">
-
-    <div class="section-title">
-
-        <div class="section-number">
-            02
-        </div>
-
-        <div>
-
-            <p>WHAT I WORK WITH</p>
-
-            <h2>
-                Skills & <span>Tools</span>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-    <div class="skills-grid">
-
-
-        <!-- CARD 1 -->
-
-        <div class="skill-card">
-
-            <span class="skill-number">
-                01
-            </span>
-
-            <h3>
-                Manual Testing
-            </h3>
-
-            <p>
-                End-to-end application testing and
-                quality validation.
-            </p>
-
-            <div class="skill-tags">
-
-                <span>Functional</span>
-                <span>Regression</span>
-                <span>Integration</span>
-                <span>System</span>
-                <span>Re-testing</span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- CARD 2 -->
-
-        <div class="skill-card">
-
-            <span class="skill-number">
-                02
-            </span>
-
-            <h3>
-                Automation Testing
-            </h3>
-
-            <p>
-                Developing automation knowledge using
-                Python-based testing technologies.
-            </p>
-
-            <div class="skill-tags">
-
-                <span>Python</span>
-                <span>Selenium</span>
-                <span>Behave</span>
-                <span>Robot Framework</span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- CARD 3 -->
-
-        <div class="skill-card">
-
-            <span class="skill-number">
-                03
-            </span>
-
-            <h3>
-                API Testing
-            </h3>
-
-            <p>
-                Validating API requests, responses and
-                application behaviour.
-            </p>
-
-            <div class="skill-tags">
-
-                <span>Postman</span>
-                <span>REST API</span>
-                <span>JSON</span>
-                <span>HTTP</span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- CARD 4 -->
-
-        <div class="skill-card">
-
-            <span class="skill-number">
-                04
-            </span>
-
-            <h3>
-                Database & Performance
-            </h3>
-
-            <p>
-                Backend data validation and performance
-                testing for application reliability.
-            </p>
-
-            <div class="skill-tags">
-
-                <span>SQL</span>
-                <span>SQL Server</span>
-                <span>JMeter</span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- CARD 5 -->
-
-        <div class="skill-card">
-
-            <span class="skill-number">
-                05
-            </span>
-
-            <h3>
-                QA Tools
-            </h3>
-
-            <p>
-                Tools used for defect management,
-                collaboration and testing.
-            </p>
-
-            <div class="skill-tags">
-
-                <span>Jira</span>
-                <span>Trello</span>
-                <span>GitHub</span>
-                <span>BrowserStack</span>
-                <span>Excel</span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- CARD 6 -->
-
-        <div class="skill-card">
-
-            <span class="skill-number">
-                06
-            </span>
-
-            <h3>
-                Process & Documentation
-            </h3>
-
-            <p>
-                QA processes, documentation and
-                quality-related activities.
-            </p>
-
-            <div class="skill-tags">
-
-                <span>Agile</span>
-                <span>Scrum</span>
-                <span>ISMS</span>
-                <span>ISO</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     EXPERIENCE
-===================================================== -->
-
-<section id="experience" class="section experience-section">
-
-    <div class="section-title">
-
-        <div class="section-number">
-            03
-        </div>
-
-        <div>
-
-            <p>MY PROFESSIONAL JOURNEY</p>
-
-            <h2>
-                Work <span>Experience</span>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-    <div class="experience-wrapper">
-
-        <div class="timeline"></div>
-
-
-        <div class="experience-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="experience-card">
-
-                <div class="experience-header">
-
-                    <div>
-
-                        <span class="experience-label">
-                            QA ENGINEERING
+                        <span class="green">
+                            "Quality First 🚀"
                         </span>
 
-                        <h3>
-                            QA Engineer / Software Tester
-                        </h3>
-
-                    </div>
-
-                    <span class="experience-type">
-                        4+ Years
-                    </span>
+                    </p>
 
                 </div>
 
+            </div>
 
-                <p class="experience-intro">
+        </div>
 
-                    QA professional with 4+ years of experience
-                    involved in the software testing life cycle,
-                    from requirement analysis and test planning
-                    to execution, defect tracking and release validation.
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+            <div>
+
+                <strong>4+</strong>
+
+                <span>
+                    Years Experience
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+            </div>
+
+            <div>
+
+                <strong>20+</strong>
+
+                <span>
+                    Projects Tested
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            </div>
+
+            <div>
+
+                <strong>10+</strong>
+
+                <span>
+                    Testing Tools
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-box">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-bug"></i>
+
+            </div>
+
+            <div>
+
+                <strong>QA</strong>
+
+                <span>
+                    Quality Focused
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>ABOUT ME</span>
+
+            <h2>
+                Turning Bugs Into Better Software
+            </h2>
+
+            <p>
+                A quality-focused QA Engineer passionate
+                about reliable and user-friendly software.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-text">
+
+                <p>
+
+                    I am a passionate QA Engineer and
+                    Software Tester with 4+ years of
+                    experience in software testing and
+                    quality assurance.
 
                 </p>
 
 
-                <ul class="experience-points">
+                <p>
 
-                    <li>
-                        Designed and executed functional, regression,
-                        integration and system test scenarios.
-                    </li>
+                    I have hands-on experience in Manual
+                    Testing, Functional Testing, Regression
+                    Testing, Integration Testing, API Testing,
+                    UI Testing and Cross-Browser Testing.
 
-                    <li>
-                        Prepared detailed test cases and test scenarios
-                        based on business and functional requirements.
-                    </li>
-
-                    <li>
-                        Identified, documented and tracked defects
-                        throughout the complete defect life cycle using Jira.
-                    </li>
-
-                    <li>
-                        Performed API testing using Postman and
-                        validated requests, responses and status codes.
-                    </li>
-
-                    <li>
-                        Performed database validation using SQL and
-                        verified application data against backend records.
-                    </li>
-
-                    <li>
-                        Conducted UI, cross-browser and application
-                        workflow testing across different environments.
-                    </li>
-
-                    <li>
-                        Participated in Agile/Scrum activities,
-                        requirement discussions and release validation.
-                    </li>
-
-                    <li>
-                        Currently strengthening automation capabilities
-                        using Python, Selenium and Robot Framework.
-                    </li>
-
-                </ul>
+                </p>
 
 
-                <div class="experience-tags">
+                <p>
 
-                    <span>Manual Testing</span>
-                    <span>API Testing</span>
-                    <span>SQL</span>
-                    <span>Jira</span>
-                    <span>Agile</span>
+                    I also work with Python, Selenium,
+                    Behave, Robot Framework, Postman,
+                    SQL, JMeter, Jira and BrowserStack
+                    to improve testing efficiency and
+                    product quality.
+
+                </p>
+
+
+                <p class="highlight-text">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Understand the requirement.
+                    Find the risk.
+                    Test deeply.
+                    Deliver quality.
+
+                </p>
+
+            </div>
+
+
+            <div class="about-cards">
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-bug"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Manual Testing
+                        </h3>
+
+                        <p>
+                            Functional, Regression,
+                            Integration, System & UI Testing
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Automation
+                        </h3>
+
+                        <p>
+                            Python, Selenium, Behave &
+                            Robot Framework
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-plug"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            API Testing
+                        </h3>
+
+                        <p>
+                            Postman, REST API, JSON &
+                            API Validation
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills"
+         class="section section-alt">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <span>MY SKILLS</span>
+
+            <h2>
+                Tools & Technologies
+            </h2>
+
+            <p>
+                Technologies and tools I use throughout
+                the testing lifecycle.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-list-check"></i>
+
+                </div>
+
+                <h3>
+                    Manual Testing
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span>Functional</span>
+                    <span>Regression</span>
+                    <span>Integration</span>
+                    <span>System</span>
+                    <span>UI Testing</span>
 
                 </div>
 
             </div>
 
-        </div>
 
-    </div>
+            <div class="skill-card">
 
-</section>
+                <div class="skill-icon">
 
+                    <i class="fa-solid fa-robot"></i>
 
+                </div>
 
-<!-- =====================================================
-     PROJECTS
-===================================================== -->
+                <h3>
+                    Automation
+                </h3>
 
-<section id="projects" class="section projects-section">
+                <div class="skill-tags">
 
-    <div class="section-title">
+                    <span>Python</span>
+                    <span>Selenium</span>
+                    <span>Behave</span>
+                    <span>Robot Framework</span>
 
-        <div class="section-number">
-            04
-        </div>
-
-        <div>
-
-            <p>SELECTED WORK</p>
-
-            <h2>
-                Projects & <span>Applications</span>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-    <div class="projects-grid">
-
-
-        <!-- PROJECT 1 -->
-
-        <div class="project-card">
-
-            <div class="project-header">
-
-                <span>
-                    WEB / ENTERPRISE
-                </span>
-
-                <b>
-                    ↗
-                </b>
+                </div>
 
             </div>
 
 
-            <h3>
-                eMarQuer & Enterprise Applications
-            </h3>
+            <div class="skill-card">
 
+                <div class="skill-icon">
 
-            <p>
-                Testing enterprise applications including eMarQuer,
-                EWMS, LMS, HMS, TMS, TES, Meetings, ExtractPro+,
-                NPC, ExamCentre and Appraisal systems.
-            </p>
+                    <i class="fa-solid fa-plug"></i>
 
+                </div>
 
-            <div class="project-tags">
+                <h3>
+                    API Testing
+                </h3>
 
-                <span>Manual Testing</span>
-                <span>API</span>
-                <span>SQL</span>
-                <span>Regression</span>
+                <div class="skill-tags">
 
-            </div>
+                    <span>Postman</span>
+                    <span>REST API</span>
+                    <span>JSON</span>
+                    <span>Validation</span>
 
-        </div>
-
-
-
-        <!-- PROJECT 2 -->
-
-        <div class="project-card">
-
-            <div class="project-header">
-
-                <span>
-                    MOBILE / SaaS
-                </span>
-
-                <b>
-                    ↗
-                </b>
+                </div>
 
             </div>
 
 
-            <h3>
-                Truckrr Applications
-            </h3>
+            <div class="skill-card">
 
+                <div class="skill-icon">
 
-            <p>
-                QA testing for TruckrrOne, Truckrr Driver and
-                Truckrr Corporate SaaS applications, covering
-                functional workflows, UI behaviour and integration
-                scenarios.
-            </p>
+                    <i class="fa-solid fa-database"></i>
 
+                </div>
 
-            <div class="project-tags">
+                <h3>
+                    Database
+                </h3>
 
-                <span>Mobile Testing</span>
-                <span>SaaS</span>
-                <span>API</span>
-                <span>UI Testing</span>
+                <div class="skill-tags">
 
-            </div>
+                    <span>SQL</span>
+                    <span>SQL Server</span>
+                    <span>Data Validation</span>
+                    <span>Stored Procedures</span>
 
-        </div>
-
-
-
-        <!-- PROJECT 3 -->
-
-        <div class="project-card">
-
-            <div class="project-header">
-
-                <span>
-                    BLOCKCHAIN / WEB3
-                </span>
-
-                <b>
-                    ↗
-                </b>
+                </div>
 
             </div>
 
 
-            <h3>
-                Blockchain & NFT Applications
-            </h3>
+            <div class="skill-card">
 
+                <div class="skill-icon">
 
-            <p>
-                Testing applications across blockchain, e-commerce,
-                NFT and gaming domains with focus on functional
-                workflows, regression and application validation.
-            </p>
+                    <i class="fa-solid fa-gauge-high"></i>
 
+                </div>
 
-            <div class="project-tags">
+                <h3>
+                    Performance
+                </h3>
 
-                <span>Web Testing</span>
-                <span>Functional</span>
-                <span>Regression</span>
+                <div class="skill-tags">
 
-            </div>
+                    <span>JMeter</span>
+                    <span>Load Testing</span>
+                    <span>Performance Testing</span>
 
-        </div>
-
-
-
-        <!-- PROJECT 4 -->
-
-        <div class="project-card featured-project">
-
-            <div class="project-header">
-
-                <span>
-                    PYTHON / API
-                </span>
-
-                <b>
-                    ↗
-                </b>
+                </div>
 
             </div>
 
 
-            <h3>
-                Face Verification API
-            </h3>
+            <div class="skill-card">
 
+                <div class="skill-icon">
 
-            <p>
-                Face verification API developed using Python and
-                FastAPI for image-based verification and matching.
-            </p>
+                    <i class="fa-solid fa-toolbox"></i>
 
+                </div>
 
-            <div class="project-tags">
+                <h3>
+                    Testing Tools
+                </h3>
 
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>REST API</span>
-                <span>Face Verification</span>
+                <div class="skill-tags">
+
+                    <span>Jira</span>
+                    <span>GitHub</span>
+                    <span>BrowserStack</span>
+                    <span>Excel</span>
+
+                </div>
 
             </div>
+
 
         </div>
 
@@ -1058,171 +760,713 @@
 </section>
 
 
+<!-- ================= EXPERIENCE ================= -->
 
-<!-- =====================================================
-     CONTACT
-===================================================== -->
+<section id="experience"
+         class="section">
 
-<section id="contact" class="section contact-section">
+    <div class="container">
 
-    <div class="section-title">
 
-        <div class="section-number">
-            05
-        </div>
+        <div class="section-title">
 
-        <div>
-
-            <p>LET'S CONNECT</p>
+            <span>CAREER</span>
 
             <h2>
-                Get In <span>Touch</span>
+                Professional Experience
             </h2>
+
+            <p>
+                My experience across software testing
+                and quality assurance.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                </div>
+
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        2024 — Present
+                    </span>
+
+                    <h3>
+                        QA Engineer / Software Tester
+                    </h3>
+
+                    <h4>
+
+                        <i class="fa-solid fa-building"></i>
+
+                        Software Testing & QA
+
+                    </h4>
+
+                    <p>
+
+                        Responsible for manual and
+                        automation testing across web,
+                        mobile and API-based applications.
+                        Worked on functional, regression,
+                        integration and API testing
+                        throughout the development lifecycle.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>Manual Testing</span>
+                        <span>API Testing</span>
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>Jira</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        2022 — 2024
+                    </span>
+
+                    <h3>
+                        Testing Engineer
+                    </h3>
+
+                    <h4>
+
+                        <i class="fa-solid fa-building"></i>
+
+                        Software Testing
+
+                    </h4>
+
+                    <p>
+
+                        Performed functional, regression,
+                        integration and system testing.
+                        Worked closely with developers,
+                        business teams and project
+                        stakeholders throughout the SDLC.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>Functional Testing</span>
+                        <span>Regression</span>
+                        <span>SQL</span>
+                        <span>Postman</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <i class="fa-solid fa-vial"></i>
+
+                </div>
+
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        2022
+                    </span>
+
+                    <h3>
+                        Software Tester
+                    </h3>
+
+                    <h4>
+
+                        <i class="fa-solid fa-building"></i>
+
+                        QA & Software Testing
+
+                    </h4>
+
+                    <p>
+
+                        Executed test cases, identified
+                        defects, performed retesting and
+                        supported regression testing
+                        activities.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>Manual Testing</span>
+                        <span>Test Cases</span>
+                        <span>Bug Tracking</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
 
     </div>
 
+</section>
 
-    <div class="contact-grid">
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects"
+         class="section section-alt">
+
+    <div class="container">
 
 
-        <div class="contact-content">
+        <div class="section-title">
 
-            <h3>
-                Have a project or opportunity?
-            </h3>
+            <span>MY WORK</span>
 
+            <h2>
+                Featured Projects
+            </h2>
 
             <p>
-                I am open to discussing QA opportunities,
-                software testing projects and technology-related
-                collaborations.
+                Applications and products I have
+                tested or worked on.
             </p>
 
+        </div>
 
-            <div class="contact-list">
+
+        <div class="projects-grid">
 
 
-                <a href="mailto:maridinesh2202@gmail.com">
+            <div class="project-card">
 
-                    <div class="contact-icon">
-                        @
-                    </div>
+                <div class="project-top">
 
-                    <div>
+                    <div class="project-icon">
 
-                        <small>
-                            EMAIL
-                        </small>
-
-                        <strong>
-                            maridinesh2202@gmail.com
-                        </strong>
+                        <i class="fa-solid fa-building"></i>
 
                     </div>
 
-                </a>
+                    <span>
+                        WEB APPLICATION
+                    </span>
+
+                </div>
+
+                <h3>
+                    eMarQuer & EWMS
+                </h3>
+
+                <p>
+
+                    Enterprise applications involving
+                    project management, meetings,
+                    task management, LMS, HMS, TMS
+                    and business workflows.
+
+                </p>
 
 
+                <div class="tags">
 
-                <a href="tel:+916380345906">
+                    <span>Manual</span>
+                    <span>API</span>
+                    <span>SQL</span>
+                    <span>Regression</span>
 
-                    <div class="contact-icon">
-                        ☎
-                    </div>
+                </div>
 
-                    <div>
-
-                        <small>
-                            PHONE
-                        </small>
-
-                        <strong>
-                            +91 63803 45906
-                        </strong>
-
-                    </div>
-
-                </a>
+            </div>
 
 
+            <div class="project-card">
 
-                <a
-                    href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
-                    target="_blank"
-                >
+                <div class="project-top">
 
-                    <div class="contact-icon">
-                        in
-                    </div>
+                    <div class="project-icon">
 
-                    <div>
-
-                        <small>
-                            LINKEDIN
-                        </small>
-
-                        <strong>
-                            mari-dinesh-s
-                        </strong>
+                        <i class="fa-solid fa-truck"></i>
 
                     </div>
 
-                </a>
+                    <span>
+                        MOBILE / SAAS
+                    </span>
 
+                </div>
+
+                <h3>
+                    Truckrr Applications
+                </h3>
+
+                <p>
+
+                    Tested TruckrrOne, Truckrr Driver
+                    and Truckrr Corporate mobile and
+                    SaaS applications.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Mobile</span>
+                    <span>UI</span>
+                    <span>API</span>
+                    <span>Regression</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+
+                    <span>
+                        BLOCKCHAIN
+                    </span>
+
+                </div>
+
+                <h3>
+                    Blockchain & NFT Applications
+                </h3>
+
+                <p>
+
+                    Tested blockchain applications,
+                    NFT platforms, e-commerce
+                    applications and game applications.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Functional</span>
+                    <span>Web</span>
+                    <span>Regression</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card featured-project">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-face-smile"></i>
+
+                    </div>
+
+                    <span>
+                        PYTHON / API
+                    </span>
+
+                </div>
+
+                <h3>
+                    Face Verification API
+                </h3>
+
+                <p>
+
+                    Developed and tested a Face
+                    Verification API using Python,
+                    FastAPI and InsightFace for
+                    image-based face matching.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>API</span>
+                    <span>InsightFace</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                    <span>
+                        EDUCATION
+                    </span>
+
+                </div>
+
+                <h3>
+                    ExamCentre & LMS
+                </h3>
+
+                <p>
+
+                    Tested examination, learning
+                    management and evaluation
+                    workflows across education
+                    applications.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Functional</span>
+                    <span>Integration</span>
+                    <span>Regression</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <span>
+                        BUSINESS APPLICATION
+                    </span>
+
+                </div>
+
+                <h3>
+                    Appraisal & Business Systems
+                </h3>
+
+                <p>
+
+                    Worked on rating, appraisal,
+                    task management and enterprise
+                    business workflow applications.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>System</span>
+                    <span>UI</span>
+                    <span>API</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTING PROCESS ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <span>MY APPROACH</span>
+
+            <h2>
+                Software Testing Process
+            </h2>
+
+            <p>
+                A structured approach to delivering
+                stable and reliable software.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-card">
+
+                <span>01</span>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <h3>
+                    Requirement Analysis
+                </h3>
+
+                <p>
+                    Understand business requirements
+                    and testing scope.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>02</span>
+
+                <i class="fa-solid fa-file-pen"></i>
+
+                <h3>
+                    Test Planning
+                </h3>
+
+                <p>
+                    Prepare test scenarios, cases
+                    and testing strategy.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>03</span>
+
+                <i class="fa-solid fa-vial-circle-check"></i>
+
+                <h3>
+                    Test Execution
+                </h3>
+
+                <p>
+                    Execute functional, regression
+                    and integration tests.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>04</span>
+
+                <i class="fa-solid fa-bug"></i>
+
+                <h3>
+                    Defect Tracking
+                </h3>
+
+                <p>
+                    Report, track, retest and
+                    verify defects.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>05</span>
+
+                <i class="fa-solid fa-rotate"></i>
+
+                <h3>
+                    Regression
+                </h3>
+
+                <p>
+                    Ensure existing functionality
+                    remains stable after changes.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>06</span>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>
+                    Release Validation
+                </h3>
+
+                <p>
+                    Validate fixes and support
+                    production releases.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+         class="contact-section">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+
+            <div class="contact-content">
+
+                <span>
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Let's Build Better Software Together.
+                </h2>
+
+                <p>
+
+                    Looking for a QA Engineer for
+                    your next project?
+                    Feel free to connect with me.
+
+                </p>
+
+
+                <div class="contact-buttons">
+
+
+                    <a href="mailto:maridinesh2202@gmail.com"
+                       class="btn btn-primary">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        Email Me
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-secondary">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                        LinkedIn
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-info">
 
 
                 <div>
 
-                    <div class="contact-icon">
-                        📍
-                    </div>
+                    <i class="fa-solid fa-envelope"></i>
 
-                    <div>
-
-                        <small>
-                            LOCATION
-                        </small>
-
-                        <strong>
-                            Chennai, Tamil Nadu, India
-                        </strong>
-
-                    </div>
+                    <p>
+                        maridinesh2202@gmail.com
+                    </p>
 
                 </div>
 
+
+                <div>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <p>
+                        +91 63803 45906
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <p>
+                        Chennai, Tamil Nadu, India
+                    </p>
+
+                </div>
+
+
             </div>
-
-        </div>
-
-
-
-        <div class="contact-card">
-
-            <div class="contact-card-icon">
-                QA
-            </div>
-
-
-            <h3>
-                Let's build better software.
-            </h3>
-
-
-            <p>
-                Quality is not just about finding bugs.
-                It is about creating confidence in every release.
-            </p>
-
-
-            <a
-                href="mailto:maridinesh2202@gmail.com"
-                class="btn primary-btn"
-            >
-                Send Me an Email →
-            </a>
 
         </div>
 
@@ -1231,42 +1475,87 @@
 </section>
 
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <div class="footer-logo">
-        MARI <span>DINESH.</span>
+    <div class="footer-container">
+
+
+        <div>
+
+            <h3>
+                MARI DINESH.S
+            </h3>
+
+            <p>
+                QA Engineer | Software Tester
+            </p>
+
+        </div>
+
+
+        <div class="footer-social">
+
+
+            <a href="https://github.com/DineshMari-Testing"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
+
+
+            <a href="mailto:maridinesh2202@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+
+        </div>
+
     </div>
 
-    <p>
-        QA Engineer • Software Tester
-    </p>
 
-    <small>
-        © 2026 Mari Dinesh S. All Rights Reserved.
-    </small>
+    <div class="copyright">
+
+        © <span id="currentYear"></span>
+
+        Mari Dinesh S.
+
+        All Rights Reserved.
+
+    </div>
 
 </footer>
 
 
+<!-- ================= SCROLL TOP ================= -->
 
-<!-- SCROLL TOP -->
+<button id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
 
-<button id="scrollTop" class="scroll-top">
-    ↑
+    <i class="fa-solid fa-arrow-up"></i>
+
 </button>
 
 
-
-<!-- JAVASCRIPT -->
+<!-- JavaScript -->
 
 <script src="script.js"></script>
 
 </body>
 
 </html>
-

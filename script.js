@@ -1,92 +1,144 @@
-```javascript
-// =====================================================
-// MOBILE MENU
-// =====================================================
+/* =====================================================
+   MOBILE MENU
+===================================================== */
 
-const menuButton = document.getElementById("menuButton");
-const closeMenu = document.getElementById("closeMenu");
-const mobileMenu = document.getElementById("mobileMenu");
-const menuOverlay = document.getElementById("menuOverlay");
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const navMenu = document.getElementById("navMenu");
 
+if (mobileMenuBtn && navMenu) {
 
-// Open menu
+    mobileMenuBtn.addEventListener("click", () => {
 
-menuButton.addEventListener("click", function () {
+        navMenu.classList.toggle("open");
 
-    mobileMenu.classList.add("open");
+        const icon = mobileMenuBtn.querySelector("i");
 
-    menuOverlay.classList.add("show");
+        if (navMenu.classList.contains("open")) {
 
-    document.body.style.overflow = "hidden";
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
 
-});
+        } else {
 
-
-// Close menu
-
-function closeMobileMenu() {
-
-    mobileMenu.classList.remove("open");
-
-    menuOverlay.classList.remove("show");
-
-    document.body.style.overflow = "";
-
-}
-
-
-closeMenu.addEventListener("click", closeMobileMenu);
-
-menuOverlay.addEventListener("click", closeMobileMenu);
-
-
-// Close menu after clicking menu item
-
-document.querySelectorAll(".mobile-menu a").forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        closeMobileMenu();
-
-    });
-
-});
-
-
-
-// =====================================================
-// DESKTOP ACTIVE NAV
-// =====================================================
-
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-link");
-
-
-window.addEventListener("scroll", function () {
-
-    let currentSection = "";
-
-    sections.forEach(function (section) {
-
-        const sectionTop = section.offsetTop - 180;
-
-        if (window.scrollY >= sectionTop) {
-
-            currentSection = section.getAttribute("id");
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
 
         }
 
     });
 
 
-    navLinks.forEach(function (link) {
+    document.querySelectorAll(".nav-link").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navMenu.classList.remove("open");
+
+            const icon = mobileMenuBtn.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        });
+
+    });
+
+}
+
+
+/* =====================================================
+   DARK / LIGHT MODE
+===================================================== */
+
+const themeToggle = document.getElementById("themeToggle");
+
+function updateThemeIcon() {
+
+    if (!themeToggle) return;
+
+    const icon = themeToggle.querySelector("i");
+
+    if (document.body.classList.contains("dark")) {
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+    } else {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
+    }
+
+}
+
+
+const savedTheme = localStorage.getItem("portfolio-theme");
+
+if (savedTheme === "dark") {
+
+    document.body.classList.add("dark");
+
+}
+
+updateThemeIcon();
+
+
+if (themeToggle) {
+
+    themeToggle.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        const theme =
+            document.body.classList.contains("dark")
+                ? "dark"
+                : "light";
+
+        localStorage.setItem("portfolio-theme", theme);
+
+        updateThemeIcon();
+
+    });
+
+}
+
+
+/* =====================================================
+   ACTIVE NAVIGATION
+===================================================== */
+
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+function updateActiveNav() {
+
+    let current = "home";
+
+    const scrollPosition = window.scrollY + 180;
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+        ) {
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navLinks.forEach(link => {
 
         link.classList.remove("active");
 
-        if (
-            link.getAttribute("href") ===
-            "#" + currentSection
-        ) {
+        if (link.getAttribute("href") === "#" + current) {
 
             link.classList.add("active");
 
@@ -94,57 +146,84 @@ window.addEventListener("scroll", function () {
 
     });
 
-});
+}
+
+window.addEventListener("scroll", updateActiveNav);
+
+updateActiveNav();
 
 
+/* =====================================================
+   SCROLL TO TOP
+===================================================== */
 
-// =====================================================
-// SCROLL TOP BUTTON
-// =====================================================
+const scrollTopBtn = document.getElementById("scrollTop");
 
-const scrollTop = document.getElementById("scrollTop");
+if (scrollTopBtn) {
 
+    window.addEventListener("scroll", () => {
 
-window.addEventListener("scroll", function () {
+        if (window.scrollY > 500) {
 
-    if (window.scrollY > 500) {
+            scrollTopBtn.classList.add("show");
 
-        scrollTop.classList.add("show");
+        } else {
 
-    } else {
+            scrollTopBtn.classList.remove("show");
 
-        scrollTop.classList.remove("show");
-
-    }
-
-});
-
-
-scrollTop.addEventListener("click", function () {
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
+        }
 
     });
 
-});
+
+    scrollTopBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
 
 
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
 
-// =====================================================
-// CLOSE MOBILE MENU WITH ESC
-// =====================================================
+const currentYear = document.getElementById("currentYear");
 
-document.addEventListener("keydown", function (event) {
+if (currentYear) {
+
+    currentYear.textContent = new Date().getFullYear();
+
+}
+
+
+/* =====================================================
+   CLOSE MENU WITH ESC
+===================================================== */
+
+document.addEventListener("keydown", (event) => {
 
     if (event.key === "Escape") {
 
-        closeMobileMenu();
+        if (navMenu) {
+
+            navMenu.classList.remove("open");
+
+        }
+
+        if (mobileMenuBtn) {
+
+            const icon = mobileMenuBtn.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
 
     }
 
 });
-```
