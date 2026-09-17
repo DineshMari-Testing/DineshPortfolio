@@ -1,347 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Mari Dinesh S - QA Engineer and Software Tester Portfolio">
-
-    <meta name="author"
-          content="Mari Dinesh S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mari Dinesh S | QA Engineer</title>
+    <meta name="description"
+          content="Mari Dinesh S - QA Engineer and Software Tester with 4+ years of experience in Manual Testing, Automation, API Testing, Python and Selenium.">
 
-    <link rel="icon"
-          type="image/svg+xml"
-          href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-
 
 <!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
-
     <div class="nav-container">
 
-        <a href="#home"
-           class="logo">
-
-            <span class="logo-box">
-                MD
-            </span>
-
-            <span>
-                MARI DINESH.S
-            </span>
-
+        <a href="#home" class="logo">
+            <span class="logo-mark">MD</span>
+            <span>MARI DINESH.S</span>
         </a>
 
+        <button class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
 
-        <nav class="nav-menu"
-             id="navMenu">
+        <nav class="nav-menu" id="navMenu">
 
-            <a href="#home"
-               class="nav-link active">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#process" class="nav-link">Process</a>
+            <a href="#contact" class="nav-link">Contact</a>
 
-                <svg viewBox="0 0 24 24">
-                    <path d="M3 11.5 12 4l9 7.5"/>
-                    <path d="M5.5 10.5V20h13v-9.5"/>
-                    <path d="M9.5 20v-5h5v5"/>
-                </svg>
-
-                <span>Home</span>
-
-            </a>
-
-
-            <a href="#about"
-               class="nav-link">
-
-                <svg viewBox="0 0 24 24">
-                    <circle cx="12" cy="8" r="3.5"/>
-                    <path d="M5 20c.8-3.5 3.1-5.5 7-5.5s6.2 2 7 5.5"/>
-                </svg>
-
-                <span>About</span>
-
-            </a>
-
-
-            <a href="#skills"
-               class="nav-link">
-
-                <svg viewBox="0 0 24 24">
-                    <path d="m8 8-4 4 4 4"/>
-                    <path d="m16 8 4 4-4 4"/>
-                    <path d="m14 4-4 16"/>
-                </svg>
-
-                <span>Skills</span>
-
-            </a>
-
-
-            <a href="#experience"
-               class="nav-link">
-
-                <svg viewBox="0 0 24 24">
-                    <rect x="3" y="7" width="18" height="13" rx="2"/>
-                    <path d="M8 7V5h8v2"/>
-                    <path d="M3 12h18"/>
-                    <path d="M10 12v2h4v-2"/>
-                </svg>
-
-                <span>Experience</span>
-
-            </a>
-
-
-            <a href="#projects"
-               class="nav-link">
-
-                <svg viewBox="0 0 24 24">
-                    <path d="M4 6h7v6H4z"/>
-                    <path d="M13 6h7v6h-7z"/>
-                    <path d="M4 14h7v4H4z"/>
-                    <path d="M13 14h7v4h-7z"/>
-                </svg>
-
-                <span>Projects</span>
-
-            </a>
-
-
-            <a href="#contact"
-               class="nav-link">
-
-                <svg viewBox="0 0 24 24">
-                    <rect x="3" y="5" width="18" height="14" rx="2"/>
-                    <path d="m4 7 8 6 8-6"/>
-                </svg>
-
-                <span>Contact</span>
-
-            </a>
-
-
-            <button id="themeToggle"
-                    class="theme-btn"
+            <button class="theme-toggle"
+                    id="themeToggle"
                     aria-label="Toggle theme">
 
-                <svg id="moonIcon"
-                     viewBox="0 0 24 24">
+                <svg class="moon-icon"
+                     viewBox="0 0 24 24"
+                     aria-hidden="true">
+                    <path d="M21 12.8A8.5 8.5 0 0 1 11.2 3
+                             8.5 8.5 0 1 0 21 12.8Z"></path>
+                </svg>
 
-                    <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4
-                             A8.5 8.5 0 1 0 20 15.5Z"/>
-
+                <svg class="sun-icon"
+                     viewBox="0 0 24 24"
+                     aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41
+                             M17.66 17.66l1.41 1.41
+                             M2 12h2M20 12h2
+                             M4.93 19.07l1.41-1.41
+                             M17.66 6.34l1.41-1.41"></path>
                 </svg>
 
             </button>
 
         </nav>
 
-
-        <button class="mobile-menu-btn"
-                id="mobileMenuBtn"
-                aria-label="Open menu">
-
-            <svg id="menuIcon"
-                 viewBox="0 0 24 24">
-
-                <path d="M4 7h16"/>
-                <path d="M4 12h16"/>
-                <path d="M4 17h16"/>
-
-            </svg>
-
-        </button>
-
     </div>
-
 </header>
-
 
 
 <!-- ================= HERO ================= -->
 
-<section id="home"
-         class="hero">
+<main>
+
+<section class="hero" id="home">
 
     <div class="hero-container">
 
-
         <div class="hero-content">
 
-
             <div class="availability">
-
                 <span class="status-dot"></span>
-
                 Available for Opportunities
-
             </div>
 
-
-            <p class="hero-small">
+            <p class="hero-small-title">
                 HELLO, I'M
             </p>
 
-
-            <h1>
-                Mari
-                <span>Dinesh</span>
-                S
+            <h1 class="hero-title">
+                Mari Dinesh S
             </h1>
 
-
-            <h2>
-                QA Engineer
-                <span>|</span>
-                Software Tester
+            <h2 class="hero-role">
+                QA Engineer <span>|</span> Software Tester
             </h2>
 
-
             <p class="hero-description">
-
-                4+ years of experience in Manual Testing,
-                Automation Testing, API Testing and Software
-                Quality Assurance. I focus on finding defects
-                early, validating business requirements and
-                delivering reliable software products.
-
+                4+ years of experience in delivering reliable,
+                high-quality software through Manual Testing,
+                Automation, API Testing and modern QA practices.
             </p>
-
 
             <div class="hero-buttons">
 
-
-                <a href="#projects"
-                   class="btn btn-primary">
-
-                    <svg viewBox="0 0 24 24">
-                        <path d="m13 2-9 12h7l-1 8 9-12h-7z"/>
-                    </svg>
-
+                <a href="#projects" class="btn btn-primary">
                     View My Work
 
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 12h14M13 6l6 6-6 6"></path>
+                    </svg>
                 </a>
 
-
-                <a href="resume.pdf"
-                   class="btn btn-secondary"
-                   download>
-
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 3v12"/>
-                        <path d="m7 10 5 5 5-5"/>
-                        <path d="M5 20h14"/>
-                    </svg>
-
-                    Download Resume
-
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Me
                 </a>
 
             </div>
 
-
-            <div class="social-links">
-
+            <div class="hero-social">
 
                 <a href="https://github.com/DineshMari-Testing"
                    target="_blank"
-                   rel="noopener noreferrer"
+                   rel="noopener"
                    aria-label="GitHub">
 
-                    <svg viewBox="0 0 24 24"
-                         class="brand-icon">
-
-                        <path d="M12 2C6.48 2 2 6.58 2 12.25
-                                 c0 4.53 2.87 8.37 6.84 9.72
-                                 .5.1.68-.22.68-.48v-1.7
-                                 c-2.78.62-3.37-1.2-3.37-1.2
-                                 -.45-1.18-1.11-1.49-1.11-1.49
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.24
+                                 c0 4.52 2.87 8.35 6.84 9.7
+                                 .5.1.68-.22.68-.49v-1.72
+                                 c-2.78.62-3.37-1.22-3.37-1.22
+                                 -.45-1.18-1.11-1.5-1.11-1.5
                                  -.91-.64.07-.63.07-.63
                                  1 .08 1.53 1.05 1.53 1.05
-                                 .9 1.58 2.36 1.12 2.94.86
+                                 .9 1.57 2.36 1.12 2.94.86
                                  .09-.67.35-1.12.64-1.38
-                                 -2.22-.26-4.56-1.14-4.56-5.07
-                                 0-1.12.39-2.03 1.03-2.75
-                                 -.1-.26-.45-1.3.1-2.7
+                                 -2.22-.26-4.56-1.14-4.56-5.08
+                                 0-1.12.39-2.04 1.03-2.76
+                                 -.1-.26-.45-1.31.1-2.73
                                  0 0 .84-.28 2.75 1.05
-                                 .8-.23 1.65-.35 2.5-.35
-                                 .85 0 1.7.12 2.5.35
+                                 A9.18 9.18 0 0 1 12 8.41
+                                 c.85 0 1.7.12 2.5.36
                                  1.91-1.33 2.75-1.05 2.75-1.05
-                                 .55 1.4.2 2.44.1 2.7
-                                 .64.72 1.03 1.63 1.03 2.75
-                                 0 3.94-2.35 4.81-4.58 5.07
+                                 .55 1.42.2 2.47.1 2.73
+                                 .64.72 1.03 1.64 1.03 2.76
+                                 0 3.95-2.34 4.81-4.57 5.07
                                  .36.32.68.94.68 1.9v2.82
-                                 c0 .27.18.59.69.48
-                                 A10.27 10.27 0 0 0 22 12.25
-                                 C22 6.58 17.52 2 12 2Z"/>
-
+                                 c0 .27.18.59.69.49
+                                 A10.26 10.26 0 0 0 22 12.24
+                                 C22 6.58 17.52 2 12 2Z"></path>
                     </svg>
 
                 </a>
-
 
                 <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
                    target="_blank"
-                   rel="noopener noreferrer"
+                   rel="noopener"
                    aria-label="LinkedIn">
 
-                    <svg viewBox="0 0 24 24"
-                         class="brand-icon">
-
-                        <path d="M5 3.5A2.5 2.5 0 1 1 5 8
-                                 a2.5 2.5 0 0 1 0-4.5Z"/>
-
-                        <path d="M3 9h4v12H3z"/>
-
-                        <path d="M10 9h4v1.8
-                                 c.7-1.2 1.8-2.2 3.8-2.2
-                                 3.5 0 4.2 2.3 4.2 5.4V21h-4v-6.2
-                                 c0-1.5 0-3.4-2.1-3.4
-                                 -2.1 0-2.4 1.6-2.4 3.3V21h-4z"/>
-
-                    </svg>
-
-                </a>
-
-
-                <a href="mailto:maridinesh2202@gmail.com"
-                   aria-label="Email">
-
                     <svg viewBox="0 0 24 24">
-
-                        <rect x="3" y="5"
-                              width="18"
-                              height="14"
-                              rx="2"/>
-
-                        <path d="m4 7 8 6 8-6"/>
-
+                        <path d="M6.5 8.2A1.7 1.7 0 1 0 6.5 4.8
+                                 1.7 1.7 0 0 0 6.5 8.2ZM5 9.5h3v9H5v-9Zm5 0h2.9v1.23
+                                 h.04c.4-.75 1.38-1.54 2.84-1.54
+                                 3.04 0 3.6 2 3.6 4.6v4.71h-3v-4.18
+                                 c0-1-.02-2.28-1.39-2.28
+                                 -1.39 0-1.6 1.09-1.6 2.21v4.25h-3v-9Z"></path>
                     </svg>
 
                 </a>
@@ -351,76 +178,39 @@
         </div>
 
 
-
-        <!-- CODE CARD -->
-
-        <div class="hero-card">
+        <div class="hero-code">
 
             <div class="code-window">
 
                 <div class="window-header">
-
                     <div class="window-dots">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
 
-                    <p>qa_engineer.py</p>
-
+                    <span>qa_engineer.py</span>
                 </div>
-
 
                 <div class="code-content">
 
-                    <p>
-                        <span class="purple">class</span>
-                        <span class="blue">QAEngineer</span>:
-                    </p>
+<pre><code><span class="code-purple">class</span> <span class="code-blue">QAEngineer</span>:
 
-                    <p class="indent">
-                        <span class="purple">def</span>
-                        <span class="yellow">__init__</span>(self):
-                    </p>
+    <span class="code-purple">def</span> <span class="code-yellow">__init__</span>(self):
+        self.name = <span class="code-green">"Mari Dinesh S"</span>
+        self.role = <span class="code-green">"QA Engineer"</span>
+        self.experience = <span class="code-orange">4+</span>
 
-                    <p class="indent2">
-                        self.name =
-                        <span class="green">"Mari Dinesh"</span>
-                    </p>
+        self.skills = [
+            <span class="code-green">"Manual Testing"</span>,
+            <span class="code-green">"Selenium"</span>,
+            <span class="code-green">"Python"</span>,
+            <span class="code-green">"API Testing"</span>,
+            <span class="code-green">"SQL"</span>
+        ]
 
-                    <p class="indent2">
-                        self.role =
-                        <span class="green">"QA Engineer"</span>
-                    </p>
-
-                    <p class="indent2">
-                        self.experience =
-                        <span class="orange">"4+ Years"</span>
-                    </p>
-
-                    <p class="indent2">
-                        self.testing =
-                        <span class="green">True</span>
-                    </p>
-
-                    <p class="indent2">
-                        self.automation =
-                        <span class="green">True</span>
-                    </p>
-
-                    <p class="indent2">
-                        self.bug_free =
-                        <span class="green">"Goal"</span>
-                    </p>
-
-                    <br>
-
-                    <p>
-                        <span class="purple">return</span>
-                        <span class="green">
-                            "Quality First 🚀"
-                        </span>
-                    </p>
+    <span class="code-purple">def</span> <span class="code-yellow">ensure_quality</span>(self):
+        <span class="code-purple">return</span> <span class="code-green">"Quality First!"</span></code></pre>
 
                 </div>
 
@@ -431,273 +221,116 @@
     </div>
 
 </section>
-
 
 
 <!-- ================= STATS ================= -->
 
 <section class="stats-section">
 
-    <div class="stats-container">
+    <div class="container">
 
+        <div class="stats-grid">
 
-        <div class="stat-box">
-
-            <div class="stat-icon">
-
-                <svg viewBox="0 0 24 24">
-                    <rect x="3" y="4"
-                          width="18"
-                          height="17"
-                          rx="2"/>
-
-                    <path d="M8 2v4"/>
-                    <path d="M16 2v4"/>
-                    <path d="M3 9h18"/>
-                    <path d="m8 14 2 2 5-5"/>
-                </svg>
-
-            </div>
-
-            <div>
+            <div class="stat-card">
                 <strong>4+</strong>
                 <span>Years Experience</span>
             </div>
 
-        </div>
-
-
-        <div class="stat-box">
-
-            <div class="stat-icon">
-
-                <svg viewBox="0 0 24 24">
-                    <rect x="3" y="3"
-                          width="7" height="7"
-                          rx="1"/>
-
-                    <rect x="14" y="3"
-                          width="7" height="7"
-                          rx="1"/>
-
-                    <rect x="3" y="14"
-                          width="7" height="7"
-                          rx="1"/>
-
-                    <rect x="14" y="14"
-                          width="7" height="7"
-                          rx="1"/>
-                </svg>
-
-            </div>
-
-            <div>
-                <strong>20+</strong>
+            <div class="stat-card">
+                <strong>15+</strong>
                 <span>Projects Tested</span>
             </div>
 
-        </div>
-
-
-        <div class="stat-box">
-
-            <div class="stat-icon">
-
-                <svg viewBox="0 0 24 24">
-                    <path d="M14 3 3 14h7l-1 7 11-11h-7z"/>
-                </svg>
-
-            </div>
-
-            <div>
+            <div class="stat-card">
                 <strong>10+</strong>
                 <span>Testing Tools</span>
             </div>
 
-        </div>
-
-
-        <div class="stat-box">
-
-            <div class="stat-icon">
-
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 3 14 8l5 2-5 2-2 5-2-5-5-2 5-2z"/>
-                    <path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>
-                </svg>
-
-            </div>
-
-            <div>
-                <strong>QA</strong>
-                <span>Quality Focused</span>
+            <div class="stat-card">
+                <strong>100%</strong>
+                <span>Quality Focus</span>
             </div>
 
         </div>
-
 
     </div>
 
 </section>
-
 
 
 <!-- ================= ABOUT ================= -->
 
-<section id="about"
-         class="section">
+<section class="section" id="about">
 
     <div class="container">
 
-
-        <div class="section-title">
-
-            <span>ABOUT ME</span>
-
-            <h2>
-                Turning Bugs Into Better Software
-            </h2>
-
-            <p>
-                A quality-focused QA Engineer passionate
-                about reliable and user-friendly software.
-            </p>
-
+        <div class="section-heading">
+            <p class="eyebrow">ABOUT ME</p>
+            <h2>Turning Bugs Into Better Software.</h2>
         </div>
-
 
         <div class="about-grid">
 
+            <div class="about-card">
 
-            <div class="about-text">
-
-                <p>
-                    I am a passionate QA Engineer and
-                    Software Tester with 4+ years of
-                    experience in software testing and
-                    quality assurance.
-                </p>
-
-                <p>
-                    I have hands-on experience in Manual
-                    Testing, Functional Testing, Regression
-                    Testing, Integration Testing, API Testing,
-                    UI Testing and Cross-Browser Testing.
-                </p>
-
-                <p>
-                    I also work with Python, Selenium,
-                    Behave, Robot Framework, Postman,
-                    SQL, JMeter, Jira and BrowserStack
-                    to improve testing efficiency and
-                    product quality.
-                </p>
-
-
-                <div class="highlight-text">
-
+                <div class="about-icon">
                     <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="9"/>
-                        <path d="m8 12 2.5 2.5L16 9"/>
+                        <path d="M4 5h16v14H4z"></path>
+                        <path d="M8 9h8M8 13h5"></path>
                     </svg>
-
-                    <span>
-                        Understand the requirement.
-                        Find the risk.
-                        Test deeply.
-                        Deliver quality.
-                    </span>
-
                 </div>
+
+                <h3>Quality-Focused QA Engineer</h3>
+
+                <p>
+                    I am a QA Engineer and Software Tester with 4+ years
+                    of experience working across web, mobile and API-based
+                    applications.
+                </p>
+
+                <p>
+                    My testing experience includes functional testing,
+                    regression testing, integration testing, UI testing,
+                    API validation, defect management and database testing.
+                </p>
 
             </div>
 
 
-            <div class="about-cards">
+            <div class="about-details">
 
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 4 14 9l5 2-5 2-2 5-2-5-5-2 5-2z"/>
-                        </svg>
-
-                    </div>
-
+                <div class="detail-item">
+                    <span class="detail-number">01</span>
                     <div>
-
-                        <h3>Manual Testing</h3>
-
+                        <h3>Test Strategy</h3>
                         <p>
-                            Functional, Regression,
-                            Integration, System & UI Testing
+                            Understanding requirements and creating
+                            practical test scenarios and test cases.
                         </p>
-
                     </div>
-
                 </div>
 
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-
-                        <svg viewBox="0 0 24 24">
-                            <rect x="5" y="7"
-                                  width="14"
-                                  height="11"
-                                  rx="2"/>
-
-                            <path d="M8 7V5h8v2"/>
-                            <circle cx="9" cy="12" r="1"/>
-                            <circle cx="15" cy="12" r="1"/>
-                            <path d="M9 15h6"/>
-                        </svg>
-
-                    </div>
-
+                <div class="detail-item">
+                    <span class="detail-number">02</span>
                     <div>
+                        <h3>Defect Management</h3>
+                        <p>
+                            Identifying, documenting, tracking and
+                            retesting defects throughout the lifecycle.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="detail-item">
+                    <span class="detail-number">03</span>
+                    <div>
                         <h3>Automation</h3>
-
                         <p>
-                            Python, Selenium, Behave &
-                            Robot Framework
+                            Building automation knowledge with Python,
+                            Selenium, Behave and Robot Framework.
                         </p>
-
                     </div>
-
                 </div>
-
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-
-                        <svg viewBox="0 0 24 24">
-                            <path d="M8 12h8"/>
-                            <path d="M7 8h-2a3 3 0 0 0 0 6h2"/>
-                            <path d="M17 8h2a3 3 0 0 1 0 6h-2"/>
-                            <path d="M9 12h6"/>
-                        </svg>
-
-                    </div>
-
-                    <div>
-
-                        <h3>API Testing</h3>
-
-                        <p>
-                            Postman, REST API, JSON &
-                            API Validation
-                        </p>
-
-                    </div>
-
-                </div>
-
 
             </div>
 
@@ -708,139 +341,123 @@
 </section>
 
 
-
 <!-- ================= SKILLS ================= -->
 
-<section id="skills"
-         class="section section-alt">
+<section class="section section-alt" id="skills">
 
     <div class="container">
 
-
-        <div class="section-title">
-
-            <span>MY SKILLS</span>
-
+        <div class="section-heading center">
+            <p class="eyebrow">MY SKILLS</p>
             <h2>Tools & Technologies</h2>
-
             <p>
-                Technologies and tools I use throughout
-                the testing lifecycle.
+                A practical QA toolkit covering manual testing,
+                automation, API validation and development basics.
             </p>
-
         </div>
 
 
         <div class="skills-grid">
 
-
             <div class="skill-card">
-
-                <div class="skill-icon">
-                    ✓
-                </div>
-
+                <div class="skill-number">01</div>
                 <h3>Manual Testing</h3>
+                <p>
+                    Functional, Regression, Integration, System,
+                    Smoke, Sanity, UI and Cross-Browser testing.
+                </p>
 
-                <div class="skill-tags">
-                    <span>Functional</span>
-                    <span>Regression</span>
-                    <span>Integration</span>
-                    <span>System</span>
-                    <span>UI Testing</span>
+                <div class="tags">
+                    <span>Test Cases</span>
+                    <span>Bug Reports</span>
+                    <span>Agile</span>
+                    <span>Scrum</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
+                <div class="skill-number">02</div>
+                <h3>Automation Testing</h3>
+                <p>
+                    Automation fundamentals using Python and
+                    Selenium with framework-level learning.
+                </p>
 
-                <div class="skill-icon">
-                    &lt;/&gt;
-                </div>
-
-                <h3>Automation</h3>
-
-                <div class="skill-tags">
+                <div class="tags">
                     <span>Python</span>
                     <span>Selenium</span>
                     <span>Behave</span>
-                    <span>Robot Framework</span>
+                    <span>Robot</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
+                <div class="skill-number">03</div>
+                <h3>API & Database</h3>
+                <p>
+                    API validation, request/response verification,
+                    SQL queries and backend data validation.
+                </p>
 
-                <div class="skill-icon">
-                    ↔
-                </div>
-
-                <h3>API Testing</h3>
-
-                <div class="skill-tags">
+                <div class="tags">
                     <span>Postman</span>
-                    <span>REST API</span>
-                    <span>JSON</span>
-                    <span>Validation</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    DB
-                </div>
-
-                <h3>Database</h3>
-
-                <div class="skill-tags">
                     <span>SQL</span>
-                    <span>SQL Server</span>
-                    <span>Data Validation</span>
-                    <span>Stored Procedures</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    ↗
-                </div>
-
-                <h3>Performance</h3>
-
-                <div class="skill-tags">
+                    <span>REST API</span>
                     <span>JMeter</span>
-                    <span>Load Testing</span>
-                    <span>Performance Testing</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
+                <div class="skill-number">04</div>
+                <h3>QA Tools</h3>
+                <p>
+                    Daily testing and project collaboration using
+                    modern QA and development tools.
+                </p>
 
-                <div class="skill-icon">
-                    ⚙
-                </div>
-
-                <h3>Testing Tools</h3>
-
-                <div class="skill-tags">
+                <div class="tags">
                     <span>Jira</span>
                     <span>GitHub</span>
                     <span>BrowserStack</span>
-                    <span>Excel</span>
+                    <span>Trello</span>
                 </div>
-
             </div>
 
+
+            <div class="skill-card">
+                <div class="skill-number">05</div>
+                <h3>Performance Testing</h3>
+                <p>
+                    Basic performance and load testing concepts
+                    using JMeter and request analysis.
+                </p>
+
+                <div class="tags">
+                    <span>JMeter</span>
+                    <span>Load Testing</span>
+                    <span>Performance</span>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-number">06</div>
+                <h3>Documentation</h3>
+                <p>
+                    QA documentation, test evidence, ISMS
+                    documentation and ISO-related processes.
+                </p>
+
+                <div class="tags">
+                    <span>ISMS</span>
+                    <span>ISO</span>
+                    <span>Excel</span>
+                    <span>Reports</span>
+                </div>
+            </div>
 
         </div>
 
@@ -849,151 +466,80 @@
 </section>
 
 
-
 <!-- ================= EXPERIENCE ================= -->
 
-<section id="experience"
-         class="section">
+<section class="section" id="experience">
 
     <div class="container">
 
-
-        <div class="section-title">
-
-            <span>CAREER</span>
-
-            <h2>Professional Experience</h2>
-
-            <p>
-                My experience across software testing
-                and quality assurance.
-            </p>
-
+        <div class="section-heading">
+            <p class="eyebrow">EXPERIENCE</p>
+            <h2>My QA Journey</h2>
         </div>
 
 
         <div class="timeline">
 
-
             <div class="timeline-item">
 
-                <div class="timeline-dot">
-                    01
-                </div>
+                <div class="timeline-marker">01</div>
 
-                <div class="timeline-card">
+                <div class="timeline-content">
 
-                    <span class="timeline-date">
-                        2024 — Present
-                    </span>
+                    <span class="timeline-date">4+ YEARS</span>
 
-                    <h3>
-                        QA Engineer / Software Tester
-                    </h3>
+                    <h3>QA Engineer / Software Tester</h3>
 
-                    <h4>
-                        Software Testing & QA
-                    </h4>
+                    <p class="timeline-company">
+                        Software Testing & Quality Assurance
+                    </p>
 
                     <p>
-                        Responsible for manual and
-                        automation testing across web,
-                        mobile and API-based applications.
-                        Worked on functional, regression,
-                        integration and API testing
-                        throughout the development lifecycle.
+                        Working on web, mobile and enterprise applications
+                        with responsibilities covering requirement analysis,
+                        test planning, test execution, defect reporting,
+                        regression testing, API testing and database validation.
                     </p>
 
                     <div class="tags">
                         <span>Manual Testing</span>
                         <span>API Testing</span>
+                        <span>SQL</span>
+                        <span>Jira</span>
+                        <span>Agile</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-marker">02</div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">AUTOMATION</span>
+
+                    <h3>Automation & Development Learning</h3>
+
+                    <p>
+                        Expanding QA capabilities through Python,
+                        Selenium, Behave, Robot Framework and API
+                        automation concepts.
+                    </p>
+
+                    <div class="tags">
                         <span>Python</span>
                         <span>Selenium</span>
-                        <span>Jira</span>
+                        <span>Behave</span>
+                        <span>Robot Framework</span>
                     </div>
 
                 </div>
 
             </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot">
-                    02
-                </div>
-
-                <div class="timeline-card">
-
-                    <span class="timeline-date">
-                        2022 — 2024
-                    </span>
-
-                    <h3>
-                        Testing Engineer
-                    </h3>
-
-                    <h4>
-                        Software Testing
-                    </h4>
-
-                    <p>
-                        Performed functional, regression,
-                        integration and system testing.
-                        Worked closely with developers,
-                        business teams and project
-                        stakeholders throughout the SDLC.
-                    </p>
-
-                    <div class="tags">
-                        <span>Functional Testing</span>
-                        <span>Regression</span>
-                        <span>SQL</span>
-                        <span>Postman</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot">
-                    03
-                </div>
-
-                <div class="timeline-card">
-
-                    <span class="timeline-date">
-                        2022
-                    </span>
-
-                    <h3>
-                        Software Tester
-                    </h3>
-
-                    <h4>
-                        QA & Software Testing
-                    </h4>
-
-                    <p>
-                        Executed test cases, identified
-                        defects, performed retesting and
-                        supported regression testing
-                        activities.
-                    </p>
-
-                    <div class="tags">
-                        <span>Manual Testing</span>
-                        <span>Test Cases</span>
-                        <span>Bug Tracking</span>
-                    </div>
-
-                </div>
-
-            </div>
-
 
         </div>
 
@@ -1002,235 +548,202 @@
 </section>
 
 
-
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects"
-         class="section section-alt">
+<section class="section section-alt" id="projects">
 
     <div class="container">
 
-
-        <div class="section-title">
-
-            <span>MY WORK</span>
-
-            <h2>Featured Projects</h2>
-
+        <div class="section-heading center">
+            <p class="eyebrow">PROJECTS</p>
+            <h2>Projects I've Worked On</h2>
             <p>
-                Applications and products I have
-                tested or worked on.
+                Applications and QA projects across enterprise,
+                mobile, SaaS and API environments.
             </p>
-
         </div>
 
 
         <div class="projects-grid">
 
-
-            <div class="project-card">
+            <article class="project-card featured">
 
                 <div class="project-top">
+                    <span class="project-type">ENTERPRISE</span>
 
-                    <div class="project-icon">
-                        EM
-                    </div>
-
-                    <span>
-                        WEB APPLICATION
+                    <span class="project-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                            <path d="M7 8h10M7 12h7M7 16h4"></path>
+                        </svg>
                     </span>
-
                 </div>
 
-                <h3>
-                    eMarQuer & EWMS
-                </h3>
+                <h3>eMarQuer & EWMS</h3>
 
                 <p>
-                    Enterprise applications involving
-                    project management, meetings,
-                    task management, LMS, HMS, TMS
-                    and business workflows.
+                    Enterprise web applications covering LMS, HMS, TMS,
+                    TES, Meetings, OAM and workflow-based modules.
                 </p>
 
                 <div class="tags">
-                    <span>Manual</span>
+                    <span>Web Testing</span>
                     <span>API</span>
                     <span>SQL</span>
                     <span>Regression</span>
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="project-card">
+            <article class="project-card">
 
                 <div class="project-top">
+                    <span class="project-type">MOBILE / SaaS</span>
 
-                    <div class="project-icon">
-                        TR
-                    </div>
-
-                    <span>
-                        MOBILE / SAAS
+                    <span class="project-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="6" y="2" width="12" height="20" rx="2"></rect>
+                            <path d="M9 5h6M10 18h4"></path>
+                        </svg>
                     </span>
-
                 </div>
 
-                <h3>
-                    Truckrr Applications
-                </h3>
+                <h3>Truckrr Applications</h3>
 
                 <p>
-                    Tested TruckrrOne, Truckrr Driver
-                    and Truckrr Corporate mobile and
-                    SaaS applications.
+                    Testing for TruckrrOne, Truckrr Driver and
+                    Truckrr Corporate mobile and SaaS applications.
                 </p>
 
                 <div class="tags">
                     <span>Mobile</span>
-                    <span>UI</span>
-                    <span>API</span>
+                    <span>SaaS</span>
+                    <span>Functional</span>
                     <span>Regression</span>
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="project-card">
+            <article class="project-card">
 
                 <div class="project-top">
+                    <span class="project-type">SECURITY / WEB</span>
 
-                    <div class="project-icon">
-                        BC
-                    </div>
-
-                    <span>
-                        BLOCKCHAIN
+                    <span class="project-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3 4 6v5c0 5 3.5 8.5 8 10
+                                     4.5-1.5 8-5 8-10V6l-8-3Z"></path>
+                            <path d="m9 12 2 2 4-5"></path>
+                        </svg>
                     </span>
-
                 </div>
 
-                <h3>
-                    Blockchain & NFT Applications
-                </h3>
+                <h3>Various Web Applications</h3>
 
                 <p>
-                    Tested blockchain applications,
-                    NFT platforms, e-commerce
-                    applications and game applications.
+                    Testing experience across blockchain, e-commerce,
+                    NFT and game-based applications.
                 </p>
 
                 <div class="tags">
-                    <span>Functional</span>
                     <span>Web</span>
-                    <span>Regression</span>
+                    <span>Security</span>
+                    <span>API</span>
+                    <span>UI</span>
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="project-card featured-project">
+            <article class="project-card">
 
                 <div class="project-top">
+                    <span class="project-type">PYTHON / API</span>
 
-                    <div class="project-icon">
-                        AI
-                    </div>
-
-                    <span>
-                        PYTHON / API
+                    <span class="project-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="8" cy="12" r="3"></circle>
+                            <circle cx="16" cy="12" r="3"></circle>
+                            <path d="M11 12h2"></path>
+                        </svg>
                     </span>
-
                 </div>
 
-                <h3>
-                    Face Verification API
-                </h3>
+                <h3>Face Verification API</h3>
 
                 <p>
-                    Developed and tested a Face
-                    Verification API using Python,
-                    FastAPI and InsightFace for
-                    image-based face matching.
+                    Face matching API developed using Python,
+                    FastAPI and face recognition technology.
                 </p>
 
                 <div class="tags">
                     <span>Python</span>
                     <span>FastAPI</span>
-                    <span>API</span>
-                    <span>InsightFace</span>
+                    <span>REST API</span>
+                    <span>AI</span>
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="project-card">
+            <article class="project-card">
 
                 <div class="project-top">
+                    <span class="project-type">MOBILE</span>
 
-                    <div class="project-icon">
-                        LMS
-                    </div>
-
-                    <span>
-                        EDUCATION
+                    <span class="project-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="7" y="3" width="10" height="18" rx="2"></rect>
+                            <path d="M10 6h4M10 18h4"></path>
+                        </svg>
                     </span>
-
                 </div>
 
-                <h3>
-                    ExamCentre & LMS
-                </h3>
+                <h3>ExamCentre</h3>
 
                 <p>
-                    Tested examination, learning
-                    management and evaluation
-                    workflows across education
-                    applications.
+                    Mobile application testing including functional,
+                    UI, regression and end-to-end validation.
+                </p>
+
+                <div class="tags">
+                    <span>Mobile</span>
+                    <span>UI Testing</span>
+                    <span>Regression</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-type">BUSINESS APP</span>
+
+                    <span class="project-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 5h16v14H4z"></path>
+                            <path d="M8 9h8M8 13h8M8 17h5"></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <h3>Appraisal & Rating</h3>
+
+                <p>
+                    Testing application workflows related to appraisal,
+                    rating and business process management.
                 </p>
 
                 <div class="tags">
                     <span>Functional</span>
-                    <span>Integration</span>
+                    <span>Workflow</span>
                     <span>Regression</span>
                 </div>
 
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-top">
-
-                    <div class="project-icon">
-                        BP
-                    </div>
-
-                    <span>
-                        BUSINESS APPLICATION
-                    </span>
-
-                </div>
-
-                <h3>
-                    Appraisal & Business Systems
-                </h3>
-
-                <p>
-                    Worked on rating, appraisal,
-                    task management and enterprise
-                    business workflow applications.
-                </p>
-
-                <div class="tags">
-                    <span>System</span>
-                    <span>UI</span>
-                    <span>API</span>
-                </div>
-
-            </div>
-
+            </article>
 
         </div>
 
@@ -1239,279 +752,191 @@
 </section>
 
 
-
 <!-- ================= TESTING PROCESS ================= -->
 
-<section class="section">
+<section class="section" id="process">
 
     <div class="container">
 
-
-        <div class="section-title">
-
-            <span>MY APPROACH</span>
-
-            <h2>
-                Software Testing Process
-            </h2>
-
-            <p>
-                A structured approach to delivering
-                stable and reliable software.
-            </p>
-
+        <div class="section-heading center">
+            <p class="eyebrow">TESTING PROCESS</p>
+            <h2>How I Approach Quality</h2>
         </div>
 
 
         <div class="process-grid">
 
-
             <div class="process-card">
-
                 <span>01</span>
-
-                <div class="process-icon">⌕</div>
-
-                <h3>
-                    Requirement Analysis
-                </h3>
-
+                <h3>Understand</h3>
                 <p>
-                    Understand business requirements
-                    and testing scope.
+                    Analyze requirements, business flows and
+                    acceptance criteria.
                 </p>
-
             </div>
 
-
             <div class="process-card">
-
                 <span>02</span>
-
-                <div class="process-icon">✎</div>
-
-                <h3>
-                    Test Planning
-                </h3>
-
+                <h3>Plan</h3>
                 <p>
-                    Prepare test scenarios, cases
-                    and testing strategy.
+                    Identify test scenarios, test data,
+                    environments and coverage.
                 </p>
-
             </div>
 
-
             <div class="process-card">
-
                 <span>03</span>
-
-                <div class="process-icon">✓</div>
-
-                <h3>
-                    Test Execution
-                </h3>
-
+                <h3>Execute</h3>
                 <p>
-                    Execute functional, regression
-                    and integration tests.
+                    Execute functional, regression, API,
+                    UI and integration test cases.
                 </p>
-
             </div>
 
-
             <div class="process-card">
-
                 <span>04</span>
-
-                <div class="process-icon">🐞</div>
-
-                <h3>
-                    Defect Tracking
-                </h3>
-
+                <h3>Report</h3>
                 <p>
-                    Report, track, retest and
-                    verify defects.
+                    Document defects with clear steps,
+                    evidence and expected results.
                 </p>
-
             </div>
 
-
             <div class="process-card">
-
                 <span>05</span>
-
-                <div class="process-icon">↻</div>
-
-                <h3>
-                    Regression
-                </h3>
-
+                <h3>Retest</h3>
                 <p>
-                    Ensure existing functionality
-                    remains stable after changes.
+                    Validate fixes and perform regression
+                    testing to ensure stability.
                 </p>
-
             </div>
-
 
             <div class="process-card">
-
                 <span>06</span>
-
-                <div class="process-icon">✓</div>
-
-                <h3>
-                    Release Validation
-                </h3>
-
+                <h3>Deliver</h3>
                 <p>
-                    Validate fixes and support
-                    production releases.
+                    Provide QA status, evidence and release
+                    confidence to stakeholders.
                 </p>
-
             </div>
-
 
         </div>
 
     </div>
 
 </section>
-
 
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact"
-         class="contact-section">
+<section class="contact-section" id="contact">
 
     <div class="container">
 
-
-        <div class="contact-box">
-
+        <div class="contact-card">
 
             <div class="contact-content">
 
-                <span>
-                    GET IN TOUCH
-                </span>
+                <p class="eyebrow">GET IN TOUCH</p>
 
                 <h2>
-                    Let's Build Better Software Together.
+                    Let's Build Better<br>
+                    Software Together.
                 </h2>
 
                 <p>
-                    Looking for a QA Engineer for
-                    your next project?
-                    Feel free to connect with me.
+                    Looking for a QA Engineer who can understand
+                    business requirements, test deeply and work
+                    closely with development teams?
                 </p>
 
-
-                <div class="contact-buttons">
-
-
-                    <a href="mailto:maridinesh2202@gmail.com"
-                       class="btn btn-primary">
-
-                        <svg viewBox="0 0 24 24">
-                            <rect x="3" y="5"
-                                  width="18"
-                                  height="14"
-                                  rx="2"/>
-
-                            <path d="m4 7 8 6 8-6"/>
-                        </svg>
-
-                        Email Me
-
-                    </a>
-
-
-                    <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn btn-secondary">
-
-                        <svg viewBox="0 0 24 24">
-                            <path d="M5 3.5A2.5 2.5 0 1 1 5 8
-                                     a2.5 2.5 0 0 1 0-4.5Z"/>
-
-                            <path d="M3 9h4v12H3z"/>
-
-                            <path d="M10 9h4v1.8
-                                     c.7-1.2 1.8-2.2 3.8-2.2
-                                     3.5 0 4.2 2.3 4.2 5.4V21h-4v-6.2
-                                     c0-1.5 0-3.4-2.1-3.4
-                                     -2.1 0-2.4 1.6-2.4 3.3V21h-4z"/>
-                        </svg>
-
-                        LinkedIn
-
-                    </a>
-
-
-                </div>
-
             </div>
 
 
-            <div class="contact-info">
+            <div class="contact-details">
+
+                <a href="mailto:maridinesh2202@gmail.com"
+                   class="contact-item">
+
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                            <path d="m4 7 8 6 8-6"></path>
+                        </svg>
+                    </span>
+
+                    <div>
+                        <small>Email</small>
+                        <strong>maridinesh2202@gmail.com</strong>
+                    </div>
+
+                </a>
 
 
-                <div>
+                <a href="tel:+916380345906"
+                   class="contact-item">
 
-                    <svg viewBox="0 0 24 24">
-                        <rect x="3" y="5"
-                              width="18"
-                              height="14"
-                              rx="2"/>
-                        <path d="m4 7 8 6 8-6"/>
-                    </svg>
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.5 3h3l1.5 4-2 1.5
+                                     c1 2.2 2.3 3.5 4.5 4.5
+                                     l1.5-2 4 1.5v3
+                                     c0 1-1 2-2 2
+                                     C10.5 17.5 6.5 13.5 6.5 7
+                                     c0-1 0-4 0-4Z"></path>
+                        </svg>
+                    </span>
 
-                    <p>
-                        maridinesh2202@gmail.com
-                    </p>
+                    <div>
+                        <small>Phone</small>
+                        <strong>+91 63803 45906</strong>
+                    </div>
+
+                </a>
+
+
+                <div class="contact-item">
+
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 21s7-6.2 7-11
+                                     a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"></path>
+                            <circle cx="12" cy="10" r="2.5"></circle>
+                        </svg>
+                    </span>
+
+                    <div>
+                        <small>Location</small>
+                        <strong>Chennai, Tamil Nadu, India</strong>
+                    </div>
 
                 </div>
 
 
-                <div>
+                <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
+                   target="_blank"
+                   rel="noopener"
+                   class="contact-item">
 
-                    <svg viewBox="0 0 24 24">
-                        <path d="M7 3h3l2 5-2 2
-                                 c1 2 2 3 4 4l2-2 5 2v3
-                                 c0 1-1 2-2 2
-                                 C11 19 5 13 5 5
-                                 c0-1 1-2 2-2Z"/>
-                    </svg>
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.5 8.2A1.7 1.7 0 1 0 6.5 4.8
+                                     1.7 1.7 0 0 0 6.5 8.2ZM5 9.5h3v9H5v-9Zm5 0h2.9v1.23
+                                     h.04c.4-.75 1.38-1.54 2.84-1.54
+                                     3.04 0 3.6 2 3.6 4.6v4.71h-3v-4.18
+                                     c0-1-.02-2.28-1.39-2.28
+                                     -1.39 0-1.6 1.09-1.6 2.21v4.25h-3v-9Z"></path>
+                        </svg>
+                    </span>
 
-                    <p>
-                        +91 63803 45906
-                    </p>
+                    <div>
+                        <small>LinkedIn</small>
+                        <strong>Connect with me</strong>
+                    </div>
 
-                </div>
-
-
-                <div>
-
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 21s7-6.2 7-11
-                                 a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/>
-                        <circle cx="12" cy="10" r="2.5"/>
-                    </svg>
-
-                    <p>
-                        Chennai, Tamil Nadu, India
-                    </p>
-
-                </div>
-
+                </a>
 
             </div>
-
 
         </div>
 
@@ -1519,135 +944,44 @@
 
 </section>
 
+</main>
 
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="footer">
 
-    <div class="footer-container">
-
+    <div class="container footer-inner">
 
         <div>
-
-            <h3>
-                MARI DINESH.S
-            </h3>
-
-            <p>
-                QA Engineer | Software Tester
-            </p>
-
+            <strong>MARI DINESH.S</strong>
+            <p>QA Engineer | Software Tester</p>
         </div>
 
-
-        <div class="footer-social">
-
-
-            <a href="https://github.com/DineshMari-Testing"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                <svg viewBox="0 0 24 24"
-                     class="brand-icon">
-
-                    <path d="M12 2C6.48 2 2 6.58 2 12.25
-                             c0 4.53 2.87 8.37 6.84 9.72
-                             .5.1.68-.22.68-.48v-1.7
-                             c-2.78.62-3.37-1.2-3.37-1.2
-                             -.45-1.18-1.11-1.49-1.11-1.49
-                             -.91-.64.07-.63.07-.63
-                             1 .08 1.53 1.05 1.53 1.05
-                             .9 1.58 2.36 1.12 2.94.86
-                             .09-.67.35-1.12.64-1.38
-                             -2.22-.26-4.56-1.14-4.56-5.07
-                             0-1.12.39-2.03 1.03-2.75
-                             -.1-.26-.45-1.3.1-2.7
-                             0 0 .84-.28 2.75 1.05
-                             .8-.23 1.65-.35 2.5-.35
-                             .85 0 1.7.12 2.5.35
-                             1.91-1.33 2.75-1.05 2.75-1.05
-                             .55 1.4.2 2.44.1 2.7
-                             .64.72 1.03 1.63 1.03 2.75
-                             0 3.94-2.35 4.81-4.58 5.07
-                             .36.32.68.94.68 1.9v2.82
-                             c0 .27.18.59.69.48
-                             A10.27 10.27 0 0 0 22 12.25
-                             C22 6.58 17.52 2 12 2Z"/>
-
-                </svg>
-
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/mari-dinesh-s-a64737227"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                <svg viewBox="0 0 24 24"
-                     class="brand-icon">
-
-                    <path d="M5 3.5A2.5 2.5 0 1 1 5 8
-                             a2.5 2.5 0 0 1 0-4.5Z"/>
-
-                    <path d="M3 9h4v12H3z"/>
-
-                    <path d="M10 9h4v1.8
-                             c.7-1.2 1.8-2.2 3.8-2.2
-                             3.5 0 4.2 2.3 4.2 5.4V21h-4v-6.2
-                             c0-1.5 0-3.4-2.1-3.4
-                             -2.1 0-2.4 1.6-2.4 3.3V21h-4z"/>
-
-                </svg>
-
-            </a>
-
-
-            <a href="mailto:maridinesh2202@gmail.com">
-
-                <svg viewBox="0 0 24 24">
-                    <rect x="3" y="5"
-                          width="18"
-                          height="14"
-                          rx="2"/>
-
-                    <path d="m4 7 8 6 8-6"/>
-                </svg>
-
-            </a>
-
-
-        </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-        © <span id="currentYear"></span>
-        Mari Dinesh S.
-        All Rights Reserved.
+        <p>
+            © <span id="currentYear"></span> Mari Dinesh S.
+            All Rights Reserved.
+        </p>
 
     </div>
 
 </footer>
 
 
-
 <!-- ================= SCROLL TOP ================= -->
 
-<button id="scrollTop"
-        class="scroll-top"
+<button class="scroll-top"
+        id="scrollTop"
         aria-label="Scroll to top">
 
-    ↑
+    <svg viewBox="0 0 24 24">
+        <path d="m6 15 6-6 6 6"></path>
+    </svg>
 
 </button>
-
 
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
